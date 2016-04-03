@@ -1,0 +1,1145 @@
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}Art is a diverse range of human activities in creating visual, auditory or performing artifacts , artworks, expressing the author's imaginative or technical skill, intended to be
+appreciated for their beauty or emotional power.[1][2] In their most general form these activities include the production of works of art, the criticism of art, the study of the 
+history of art, and the aesthetic dissemination of art.
+
+The oldest form of art are visual arts, which include creation of images or objects in fields including painting, sculpture, printmaking, photography, and other visual media. 
+Architecture is often included as one of the visual arts; however, like the decorative arts, it involves the creation of objects where the practical considerations of use are 
+essential,in a way that they usually are not in a painting, for example. Music, theatre, film, dance, and other performing arts, as well as literature and other media such 
+as interactive media, are included in a broader definition of art or the arts.[1][3] Until the 17th century, art referred to any skill or mastery and was not differentiated from 
+crafts or sciences. In modern usage after the 17th century, where aesthetic considerations are paramount, the fine arts are separated and distinguished from acquired 
+skills in general, such as the decorative or applied arts.
+
+Art may be characterized in terms of mimesis (its representation of reality), expression, communication of emotion, or other qualities. During the Romantic period, art 
+came to be seen as "a special faculty of the human mind to be classified with religion and science".[4] Though the definition of what constitutes art is disputed[5][6][7] and 
+has changed over time, general descriptions mention an idea of imaginative or technical skill stemming from human agency[8] and creation.[9]
+
+The nature of art, and related concepts such as creativity and interpretation, are explored in a branch of philosophy known as aesthetics.[10]
+
+In the perspective of the history of art,[9] artistic works have existed for almost as long as humankind: from early pre historic art to contemporary art; however, some 
+theories restrict the concept of "artistic works" to modern Western societies.[11] One early sense of the definition of art is closely related to the older Latin meaning, which 
+roughly translates to "skill" or "craft," as associated with words such as "artisan." English words derived from this meaning include artifact, artificial, artifice, medical arts, 
+and military arts. However, there are many other colloquial uses of the word, all with some relation to its etymology.
+
+
+20th century Rwandan bottle. Artistic works may serve practical functions, in addition to their decorative value.
+Few modern scholars have been more divided than Plato and Aristotle on the question concerning the importance of art, with Aristotle strongly supporting art in general 
+and Plato generally being opposed to its relative importance. Several dialogues in Plato tackle questions about art: Socrates says that poetry is inspired by the muses, and 
+is not rational. He speaks approvingly of this, and other forms of divine madness (drunkenness, eroticism, and dreaming) in the Phaedrus (265a,c), and yet in the
+Republic wants to outlaw Homer's great poetic art, and laughter as well. In Ion, Socrates gives no hint of the disapproval of Homer that he expresses in the Republic. The 
+dialogue Ion suggests that Homer's Iliad functioned in the ancient Greek world as the Bible does today in the modern Christian world: as divinely inspired literary art that 
+can provide moral guidance, if only it can be properly interpreted. With regards to the literary art and the musical arts, Aristotle considered epic poetry, tragedy, comedy, 
+dithyrambic poetry and music to be mimetic or imitative art, each varying in imitation by medium, object, and manner.[12] For example, music imitates with the media of 
+rhythm and harmony, whereas dance imitates with rhythm alone, and poetry with language. The forms also differ in their object of imitation. Comedy, for instance, is a 
+dramatic imitation of men worse than average; whereas tragedy imitates men slightly better than average. Lastly, the forms differ in their manner of imitation , through
+narrative or character, through change or no change, and through drama or no drama.[13] Aristotle believed that imitation is natural to mankind and constitutes one of 
+mankind's advantages over animals.[14]
+
+The second, and more recent, sense of the word art as an abbreviation for creative art or fine art emerged in the early 17th century.[15] Fine art refers to a skill used to 
+express the artist's creativity, or to engage the audience's aesthetic sensibilities, or to draw the audience towards consideration of more refined or finer work of art.
+
+Within this latter sense, the word art may refer to several things: (i) a study of a creative skill, (ii) a process of using the creative skill, (iii) a product of the creative skill, or 
+(iv) the audience's experience with the creative skill. The creative arts (art as discipline) are a collection of disciplines which produce artworks (art as objects) that are 
+compelled by a personal drive (art as activity) and convey a message, mood, or symbolism for the perceiver to interpret (art as experience). Art is something that 
+stimulates an individual's thoughts, emotions, beliefs, or ideas through the senses. Works of art can be explicitly made for this purpose or interpreted on the basis of 
+images or objects. For some scholars, such as Kant, the sciences and the arts could be distinguished by taking science as representing the domain of knowledge and the 
+arts as representing the domain of the freedom of artistic expression.
+
+Often, if the skill is being used in a common or practical way, people will consider it a craft instead of art. Likewise, if the skill is being used in a commercial or industrial 
+way, it may be considered commercial art instead of fine art. On the other hand, crafts and design are sometimes considered applied art. Some art followers have argued 
+that the difference between fine art and applied art has more to do with value judgments made about the art than any clear definitional difference.[16] However, even fine 
+art often has goals beyond pure creativity and self expression. The purpose of works of art may be to communicate ideas, such as in politically, spiritually, or 
+philosophically motivated art; to create a sense of beauty (see aesthetics); to explore the nature of perception; for pleasure; or to generate strong emotions. The purpose 
+may also be seemingly nonexistent.
+
+The nature of art has been described by philosopher Richard Wollheim as "one of the most elusive of the traditional problems of human culture".[17] Art has been defined 
+as a vehicle for the expression or communication of emotions and ideas, a means for exploring and appreciating formal elements for their own sake, and as mimesis or 
+representation. Art as mimesis has deep roots in the philosophy of Aristotle.[18] Leo Tolstoy identified art as a use of indirect means to communicate from one person to 
+another.[18] Benedetto Croce and R.G. Collingwood advanced the idealist view that art expresses emotions, and that the work of art therefore essentially exists in the mind 
+of the creator.[19][20] The theory of art as form has its roots in the philosophy of Immanuel Kant, and was developed in the early twentieth century by Roger Fry and Clive 
+Bell. More recently, thinkers influenced by Martin Heidegger have interpreted art as the means by which a community develops for itself a medium for self expression and 
+interpretation.[21] George Dickie has offered an institutional theory of art that defines a work of art as any artifact upon which a qualified person or persons acting on 
+behalf of the social institution commonly referred to as "the art world" has conferred "the status of candidate for appreciation".[22] Larry Shiner has described fine art as 
+"not an essence or a fate but something we have made. Art as we have generally understood it is a European invention barely two hundred years old.”[23]
+Sculptures, cave paintings, rock paintings and petroglyphs from the Upper Paleolithic dating to roughly 40,000 years ago have been found,[24] but the precise meaning of 
+such art is often disputed because so little is known about the cultures that produced them. The oldest art objects in the world,a series of tiny, drilled snail shells about 
+75,000 years old,were discovered in a South African cave.[25] Containers that may have been used to hold paints have been found dating as far back as 100,000 
+years.[26] Etched shells by Homo erectus from 430,000 and 540,000 years ago were discovered in 2014.[27]
+
+
+Cave painting of a horse from the Lascaux caves, circa 16,000 BP
+Many great traditions in art have a foundation in the art of one of the great ancient civilizations: Ancient Egypt, Mesopotamia, Persia, India, China, Ancient Greece, Rome, 
+as well as Inca, Maya, and Olmec. Each of these centers of early civilization developed a unique and characteristic style in its art. Because of the size and duration of 
+these civilizations, more of their art works have survived and more of their influence has been transmitted to other cultures and later times. Some also have provided the 
+first records of how artists worked. For example, this period of Greek art saw a veneration of the human physical form and the development of equivalent skills to show 
+musculature, poise, beauty, and anatomically correct proportions.
+
+In Byzantine and Medieval art of the Western Middle Ages, much art focused on the expression of subjects about Biblical and religious culture, and used styles that 
+showed the higher glory of a heavenly world, such as the use of gold in the background of paintings, or glass in mosaics or windows, which also presented figures in 
+idealized, patterned (flat) forms. Nevertheless, a classical realist tradition persisted in small Byzantine works, and realism steadily grew in the art of Catholic Europe.
+
+Renaissance art had a greatly increased emphasis on the realistic depiction of the material world, and the place of humans in it, reflected in the corporeality of the human 
+body, and development of a systematic method of graphical perspective to depict recession in a three dimensional picture space.
+
+
+The stylized signature of Sultan Mahmud II of the Ottoman Empire was written in Islamic calligraphy. It reads Mahmud Khan son of Abdulhamid is forever victorious.
+
+The Great Mosque of Kairouan in Tunisia, also called the Mosque of Uqba, is one of the finest, most significant and best preserved artistic and architectural examples of 
+early great mosques. Dated in its present state from the 9th century, it is the ancestor and model of all the mosques in the western Islamic lands.[28]
+In the east, Islamic art's rejection of iconography led to emphasis on geometric patterns, calligraphy, and architecture. Further east, religion dominated artistic styles and 
+forms too. India and Tibet saw emphasis on painted sculptures and dance, while religious painting borrowed many conventions from sculpture and tended to bright 
+contrasting colors with emphasis on outlines. China saw the flourishing of many art forms: jade carving, bronzework, pottery (including the stunning terracotta army of 
+Emperor Qin), poetry, calligraphy, music, painting, drama, fiction, etc. Chinese styles vary greatly from era to era and each one is traditionally named after the ruling 
+dynasty. So, for example, Tang dynasty paintings are monochromatic and sparse, emphasizing idealized landscapes, but Ming Dynasty paintings are busy and colorful, 
+and focus on telling stories via setting and composition. Japan names its styles after imperial dynasties too, and also saw much interplay between the styles of calligraphy 
+and painting. Woodblock printing became important in Japan after the 17th century.
+
+
+Painting by Song dynasty artist Ma Lin, circa 1250. 24.8   25.2 cm
+The western Age of Enlightenment in the 18th century saw artistic depictions of physical and rational certainties of the clockwork universe, as well as politically 
+revolutionary visions of a post monarchist world, such as Blake's portrayal of Newton as a divine geometer, or David's propagandistic paintings. This led to Romantic 
+rejections of this in favor of pictures of the emotional side and individuality of humans, exemplified in the novels of Goethe. The late 19th century then saw a host of artistic 
+movements, such as academic art, Symbolism, impressionism and fauvism among others.
+
+The history of twentieth century art is a narrative of endless possibilities and the search for new standards, each being torn down in succession by the next. Thus the 
+parameters of Impressionism, Expressionism, Fauvism, Cubism, Dadaism, Surrealism, etc. cannot be maintained very much beyond the time of their invention. Increasing 
+global interaction during this time saw an equivalent influence of other cultures into Western art. Thus, Japanese woodblock prints (themselves influenced by Western 
+Renaissance draftsmanship) had an immense influence on Impressionism and subsequent development. Later, African sculptures were taken up by Picasso and to some 
+extent by Matisse. Similarly, in the 19th and 20th centuries the West has had huge impacts on Eastern art with originally western ideas like Communism and Post 
+Modernism exerting a powerful influence.
+
+Modernism, the idealistic search for truth, gave way in the latter half of the 20th century to a realization of its unattainability. Theodor W. Adorno said in 1970, "It is now 
+taken for granted that nothing which concerns art can be taken for granted any more: neither art itself, nor art in relationship to the whole, nor even the right of art to 
+exist."[29] Relativism was accepted as an unavoidable truth, which led to the period of contemporary art and postmodern criticism, where cultures of the world and of 
+history are seen as changing forms, which can be appreciated and drawn from only with skepticism and irony. Furthermore, the separation of cultures is increasingly 
+blurred and some argue it is now more appropriate to think in terms of a global culture, rather than of regional ones.
+
+Forms, genres, media, and styles
+Main article: The arts
+
+Detail of Leonardo da Vinci's Mona Lisa, showing the painting technique of sfumato
+The creative arts are often divided into more specific categories, each related to its technique, or medium, such as decorative arts, plastic arts, performing arts, or 
+literature. Unlike scientific fields, art is one of the few subjects that are academically organized according to technique. An artistic medium is the substance or material the 
+artistic work is made from, and may also refer to the technique used. For example, paint is a medium used in painting, and paper is a medium used in drawing.
+
+An art form is the specific shape, or quality an artistic expression takes. The media used often influence the form. For example, the form of a sculpture must exist in space 
+in three dimensions, and respond to gravity. The constraints and limitations of a particular medium are thus called its formal qualities. To give another example, the formal 
+qualities of painting are the canvas texture, color, and brush texture. The formal qualities of video games are non linearity, interactivity and virtual presence. The form of a 
+particular work of art is determined by the formal qualities of the media, and is not related to the intentions of the artist or the reactions of the audience in any way 
+whatsoever as these properties are related to content rather than form.[30]
+
+A genre is a set of conventions and styles within a particular medium. For instance, well recognized genres in film are western, horror and romantic comedy. Genres in 
+music include death metal and trip hop. Genres in painting include still life and pastoral landscape. A particular work of art may bend or combine genres but each genre 
+has a recognizable group of conventions, clich s and tropes. (One note: the word genre has a second older meaning within painting; genre painting was a phrase used in 
+the 17th to 19th centuries to refer specifically to paintings of scenes of everyday life and is still used in this way.)
+
+
+The Great Wave off Kanagawa by Hokusai (Japanese, 1760,1849), colored woodcut print
+The style of an artwork, artist, or movement is the distinctive method and form followed by the respective art. Any loose brushy, dripped or poured abstract painting is 
+called expressionistic. Often a style is linked with a particular historical period, set of ideas, and particular artistic movement. So Jackson Pollock is called an Abstract 
+Expressionist.
+
+A particular style may have specific cultural meanings. For example, Roy Lichtenstein,a painter associated with the American Pop art movement of the 1960s,was not a 
+pointillist, despite his use of dots. Lichtenstein used evenly spaced Ben Day dots (the type used to reproduce color in comic strips) as a style to question the "high" art of 
+painting with the "low" art of comics, thus commenting on class distinctions in culture. Pointillism, a technique in late Impressionism (1880s) developed especially by the 
+artist Georges Seurat, employs dots to create variation in color and depth in an attempt to approximate the way people really see color. Both artists use dots, but the 
+particular style and technique relate to the artistic movement adopted by each artist.
+
+These are all ways of beginning to define a work of art, to narrow it down.
+
+Imagine you are an art critic whose mission is to compare the meanings you find in a wide range of individual artworks. How would you proceed with your task  One way 
+to begin is to examine the materials each artist selected in making an object, image video, or event. The decision to cast a sculpture in bronze, for instance, inevitably 
+effects its meaning; the work becomes something different from how it might be if it had been cast in gold or plastic or chocolate, even if everything else about the artwork 
+remains the same. Next, you might examine how the materials in each artwork have become an arrangement of shapes, colors, textures, and lines. These, in turn, are 
+organized into various patterns and compositional structures. In your interpretation, you would comment on how salient features of the form contribute to the overall 
+meaning of the finished artwork. [But in the end] the meaning of most artworks ... is not exhausted by a discussion of materials, techniques, and form. Most interpretations 
+also include a discussion of the ideas and feelings the artwork engenders.[31]
+
+Skill and craft
+
+Adam. Detail from Michelangelo's fresco in the Sistine Chapel (1511)
+See also: Conceptual Art and Artistic Skill
+Art can connote a sense of trained ability or mastery of a medium. Art can also simply refer to the developed and efficient use of a language to convey meaning with 
+immediacy and or depth. Art is an act of expressing feelings, thoughts, and observations.[32] There is an understanding that is reached with the material as a result of 
+handling it, which facilitates one's thought processes. A common view is that the epithet "art", particular in its elevated sense, requires a certain level of creative expertise 
+by the artist, whether this be a demonstration of technical ability, an originality in stylistic approach, or a combination of these two. Traditionally skill of execution was 
+viewed as a quality inseparable from art and thus necessary for its success; for Leonardo da Vinci, art, neither more nor less than his other endeavors, was a 
+manifestation of skill. Rembrandt's work, now praised for its ephemeral virtues, was most admired by his contemporaries for its virtuosity. At the turn of the 20th century, 
+the adroit performances of John Singer Sargent were alternately admired and viewed with skepticism for their manual fluency, yet at nearly the same time the artist who 
+would become the era's most recognized and peripatetic iconoclast, Pablo Picasso, was completing a traditional academic training at which he excelled.
+
+A common contemporary criticism of some modern art occurs along the lines of objecting to the apparent lack of skill or ability required in the production of the artistic 
+object. In conceptual art, Marcel Duchamp's "Fountain" is among the first examples of pieces wherein the artist used found objects ("ready made") and exercised no 
+traditionally recognised set of skills. Tracey Emin's My Bed, or Damien Hirst's The Physical Impossibility of Death in the Mind of Someone Living follow this example and 
+also manipulate the mass media. Emin slept (and engaged in other activities) in her bed before placing the result in a gallery as work of art. Hirst came up with the 
+conceptual design for the artwork but has left most of the eventual creation of many works to employed artisans. Hirst's celebrity is founded entirely on his ability to 
+produce shocking concepts. The actual production in many conceptual and contemporary works of art is a matter of assembly of found objects. However, there are many 
+modernist and contemporary artists who continue to excel in the skills of drawing and painting and in creating hands on works of art.
+
+Purpose of art
+
+A Navajo rug made circa 1880
+
+Mozarabic Beatus miniature. Spain, late 10th century
+Art has had a great number of different functions throughout its history, making its purpose difficult to abstract or quantify to any single concept. This does not imply that 
+the purpose of Art is "vague", but that it has had many unique, different reasons for being created. Some of these functions of Art are provided in the following outline. The 
+different purposes of art may be grouped according to those that are non motivated, and those that are motivated (L vi Strauss).
+
+Non motivated functions of art
+The non motivated purposes of art are those that are integral to being human, transcend the individual, or do not fulfill a specific external purpose. In this sense, Art, as 
+creativity, is something humans must do by their very nature (i.e., no other species creates art), and is therefore beyond utility.
+
+Basic human instinct for harmony, balance, rhythm. Art at this level is not an action or an object, but an internal appreciation of balance and harmony (beauty), and 
+therefore an aspect of being human beyond utility.
+"Imitation, then, is one instinct of our nature. Next, there is the instinct for 'harmony' and rhythm, meters being manifestly sections of rhythm. Persons, therefore, starting 
+with this natural gift developed by degrees their special aptitudes, till their rude improvisations gave birth to Poetry."  Aristotle[33]
+
+Experience of the mysterious. Art provides a way to experience one's self in relation to the universe. This experience may often come unmotivated, as one appreciates art, 
+music or poetry.
+"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science."  Albert Einstein[34]
+
+Expression of the imagination. Art provides a means to express the imagination in non grammatic ways that are not tied to the formality of spoken or written language. 
+Unlike words, which come in sequences and each of which have a definite meaning, art provides a range of forms, symbols and ideas with meanings that are malleable.
+"Jupiter's eagle [as an example of art] is not, like logical (aesthetic) attributes of an object, the concept of the sublimity and majesty of creation, but rather something else ,
+something that gives the imagination an incentive to spread its flight over a whole host of kindred representations that provoke more thought than admits of expression in a 
+concept determined by words. They furnish an aesthetic idea, which serves the above rational idea as a substitute for logical presentation, but with the proper function, 
+however, of animating the mind by opening out for it a prospect into a field of kindred representations stretching beyond its ken."  Immanuel Kant[35]
+
+Ritualistic and symbolic functions. In many cultures, art is used in rituals, performances and dances as a decoration or symbol. While these often have no specific 
+utilitarian (motivated) purpose, anthropologists know that they often serve a purpose at the level of meaning within a particular culture. This meaning is not furnished by 
+any one individual, but is often the result of many generations of change, and of a cosmological relationship within the culture.
+"Most scholars who deal with rock paintings or objects recovered from prehistoric contexts that cannot be explained in utilitarian terms and are thus categorized as 
+decorative, ritual or symbolic, are aware of the trap posed by the term 'art'."  Silva Tomaskova[36]
+
+Motivated functions of art
+Motivated purposes of art refer to intentional, conscious actions on the part of the artists or creator. These may be to bring about political change, to comment on an 
+aspect of society, to convey a specific emotion or mood, to address personal psychology, to illustrate another discipline, to (with commercial arts) to sell a product, or 
+simply as a form of communication.
+
+Communication. Art, at its simplest, is a form of communication. As most forms of communication have an intent or goal directed toward another individual, this is a 
+motivated purpose. Illustrative arts, such as scientific illustration, are a form of art as communication. Maps are another example. However, the content need not be 
+scientific. Emotions, moods and feelings are also communicated through art.
+"[Art is a set of] artefacts or images with symbolic meanings as a means of communication."  Steve Mithen[37]
+
+Art as entertainment. Art may seek to bring about a particular emotion or mood, for the purpose of relaxing or entertaining the viewer. This is often the function of the art 
+industries of Motion Pictures and Video Games.[citation needed]
+The Avante Garde. Art for political change. One of the defining functions of early twentieth century art has been to use visual images to bring about political change. Art 
+movements that had this goal,Dadaism, Surrealism, Russian constructivism, and Abstract Expressionism, among others,are collectively referred to as the avante garde 
+arts.
+"By contrast, the realistic attitude, inspired by positivism, from Saint Thomas Aquinas to Anatole France, clearly seems to me to be hostile to any intellectual or moral 
+advancement. I loathe it, for it is made up of mediocrity, hate, and dull conceit. It is this attitude which today gives birth to these ridiculous books, these insulting plays. It 
+constantly feeds on and derives strength from the newspapers and stultifies both science and art by assiduously flattering the lowest of tastes; clarity bordering on 
+stupidity, a dog's life."  Andr  Breton (Surrealism)[38]
+
+Art as a "free zone", removed from the action of the social censure. Unlike the avant garde movements, which wanted to erase cultural differences in order to produce 
+new universal values, contemporary art has enhanced its tolerance towards cultural differences as well as its critical and liberating functions (social inquiry, activism, 
+subversion, deconstruction ...), becoming a more open place for research and experimentation.[39]
+Art for social inquiry, subversion and/or anarchy. While similar to art for political change, subversive or deconstructivist art may seek to question aspects of society 
+without any specific political goal. In this case, the function of art may be simply to criticize some aspect of society.
+
+Spray paint graffiti on a wall in Rome
+Graffiti art and other types of street art are graphics and images that are spray painted or stencilled on publicly viewable walls, buildings, buses, trains, and bridges, 
+usually without permission. Certain art forms, such as graffiti, may also be illegal when they break laws (in this case vandalism).
+Art for social causes. Art can be used to raise awareness for a large variety of causes. A number of art activities were aimed at raising awareness of autism,[40][41][42] 
+cancer,[43][44][45] human trafficking,[46][47] and a variety of other topics, such as ocean conservation,[48] human rights in Darfur,[49] murdered and missing Aboriginal 
+women,[50] elder abuse,[51] and pollution.[52] Trashion, using trash to make fashion, practiced by artists such as Marina DeBris is one example of using art to raise 
+awareness about pollution.
+Art for psychological and healing purposes. Art is also used by art therapists, psychotherapists and clinical psychologists as art therapy. The Diagnostic Drawing Series, 
+for example, is used to determine the personality and emotional functioning of a patient. The end product is not the principal goal in this case, but rather a process of 
+healing, through creative acts, is sought. The resultant piece of artwork may also offer insight into the troubles experienced by the subject and may suggest suitable 
+approaches to be used in more conventional forms of psychiatric therapy.
+Art for propaganda, or commercialism. Art is often utilized as a form of propaganda, and thus can be used to subtly influence popular conceptions or mood. In a similar 
+way, art that tries to sell a product also influences mood and emotion. In both cases, the purpose of art here is to subtly manipulate the viewer into a particular emotional or 
+psychological response toward a particular idea or object.[53]
+Art as a fitness indicator. It has been argued that the ability of the human brain by far exceeds what was needed for survival in the ancestral environment. One evolutionary 
+psychology explanation for this is that the human brain and associated traits (such as artistic ability and creativity) are the human equivalent of the peacock's tail. The 
+purpose of the male peacock's extravagant tail has been argued to be to attract females (see also Fisherian runaway and handicap principle). According to this theory 
+superior execution of art was evolutionary important because it attracted mates.[54]
+The functions of art described above are not mutually exclusive, as many of them may overlap. For example, art for the purpose of entertainment may also seek to sell a 
+product, i.e. the movie or video game.
+
+Public access
+
+Versailles: Louis Le Vau opened up the interior court to create the expansive entrance cour d'honneur, later copied all over Europe.
+Since ancient times, much of the finest art has represented a deliberate display of wealth or power, often achieved by using massive scale and expensive materials. Much 
+art has been commissioned by rulers or religious establishments, with more modest versions only available to the most wealthy in society. Nevertheless, there have been 
+many periods where art of very high quality was available, in terms of ownership, across large parts of society, above all in cheap media such as pottery, which persists in 
+the ground, and perishable media such as textiles and wood. In many different cultures, the ceramics of indigenous peoples of the Americas are found in such a wide 
+range of graves that they were clearly not restricted to a social elite, though other forms of art may have been. Reproductive methods such as moulds made mass 
+production easier, and were used to bring high quality Ancient Roman pottery and Greek Tanagra figurines to a very wide market. Cylinder seals were both artistic and 
+practical, and very widely used by what can be loosely called the middle class in the Ancient Near East. Once coins were widely used these also became an art form that 
+reached the widest range of society. Another important innovation came in the 15th century in Europe, when printmaking began with small woodcuts, mostly religious, that 
+were often very small and hand colored, and affordable even by peasants who glued them to the walls of their homes. Printed books were initially very expensive, but fell 
+steadily in price until by the 19th century even the poorest could afford some with printed illustrations. Popular prints of many different sorts have decorated homes and 
+other places for centuries.
+
+Public buildings and monuments, secular and religious, by their nature normally address the whole of society, and visitors as viewers, and display to the general public has 
+long been an important factor in their design. Egyptian temples are typical in that the most largest and most lavish decoration was placed on the parts that could be seen 
+by the general public, rather than the areas seen only by the priests. Many areas of royal palaces, castles and the houses of the social elite were often generally 
+accessible, and large parts of the art collections of such people could often be seen, either by anybody, or by those able to pay a small price, or those wearing the correct 
+clothes, regardless of who they were, as at the Palace of Versailles, where the appropriate extra accessories (silver shoe buckles and a sword) could be hired from shops 
+outside.
+
+Special arrangements were made to allow the public to see many royal or private collections placed in galleries, as with the Orleans Collection mostly housed in a wing of 
+the Palais Royal in Paris, which could be visited for most of the 18th century. In Italy the art tourism of the Grand Tour became a major industry from the Renaissance 
+onwards, and governments and cities made efforts to make their key works accessible. The British Royal Collection remains distinct, but large donations such as the Old 
+Royal Library were made from it to the British Museum, established in 1753. The Uffizi in Florence opened entirely as a gallery in 1765, though this function had been 
+gradually taking the building over from the original civil servants' offices for a long time before. The building now occupied by the Prado in Madrid was built before the 
+French Revolution for the public display of parts of the royal art collection, and similar royal galleries open to the public existed in Vienna, Munich and other capitals. The 
+opening of the Mus e du Louvre during the French Revolution (in 1793) as a public museum for much of the former French royal collection certainly marked an important 
+stage in the development of public access to art, transferring ownership to a republican state, but was a continuation of trends already well established.
+
+Most modern public museums and art education programs for children in schools can be traced back to this impulse to have art available to everyone. Museums in the 
+United States tend to be gifts from the very rich to the masses (The Metropolitan Museum of Art in New York City, for example, was created by John Taylor Johnston, a 
+railroad executive whose personal art collection seeded the museum.) But despite all this, at least one of the important functions of art in the 21st century remains as a 
+marker of wealth and social status.
+
+
+Performance by Joseph Beuys, 1978: Everyone an artist , On the way to the libertarian form of the social organism
+There have been attempts by artists to create art that can not be bought by the wealthy as a status object. One of the prime original motivators of much of the art of the late 
+1960s and 1970s was to create art that could not be bought and sold. It is "necessary to present something more than mere objects"[55] said the major post war German 
+artist Joseph Beuys. This time period saw the rise of such things as performance art, video art, and conceptual art. The idea was that if the artwork was a performance 
+that would leave nothing behind, or was simply an idea, it could not be bought and sold. "Democratic precepts revolving around the idea that a work of art is a commodity 
+impelled the aesthetic innovation which germinated in the mid 1960s and was reaped throughout the 1970s. Artists broadly identified under the heading of Conceptual art 
+... substituting performance and publishing activities for engagement with both the material and materialistic concerns of painted or sculptural form ... [have] endeavored to 
+undermine the art object qua object."[56]
+
+In the decades since, these ideas have been somewhat lost as the art market has learned to sell limited edition DVDs of video works,[57] invitations to exclusive 
+performance art pieces, and the objects left over from conceptual pieces. Many of these performances create works that are only understood by the elite who have been 
+educated as to why an idea or video or piece of apparent garbage may be considered art. The marker of status becomes understanding the work instead of necessarily 
+owning it, and the artwork remains an upper class activity. "With the widespread use of DVD recording technology in the early 2000s, artists, and the gallery system that 
+derives its profits from the sale of artworks, gained an important means of controlling the sale of video and computer artworks in limited editions to collectors."[58]
+
+Controversies
+
+Th odore G ricault's Raft of the Medusa, circa 1820
+Art has long been controversial, that is to say disliked by some viewers, for a wide variety of reasons, though most pre modern controversies are dimly recorded, or 
+completely lost to a modern view. Iconoclasm is the destruction of art that is disliked for a variety of reasons, including religious ones. Aniconism is a general dislike of 
+either all figurative images, or often just religious ones, and has been a thread in many major religions. It has been a crucial factor in the history of Islamic art, where 
+depictions of Muhammad remain especially controversial. Much art has been disliked purely because it depicted or otherwise stood for unpopular rulers, parties or other 
+groups. Artistic conventions have often been conservative and taken very seriously by art critics, though often much less so by a wider public. The iconographic content of 
+art could cause controversy, as with late medieval depictions of the new motif of the Swoon of the Virgin in scenes of the Crucifixion of Jesus. The Last Judgment by 
+Michelangelo was controversial for various reasons, including breaches of decorum through nudity and the Apollo like pose of Christ.
+
+The content of much formal art through history was dictated by the patron or commissioner rather than just the artist, but with the advent of Romanticism, and econonomic 
+changes in the production of art, the artists' vision became the usual determinant of the content of his art, increasing the incidence of controversies, though often reducing 
+their significance. Strong incentives for perceived originality and publicity also encouraged artists to court controversy. Th odore G ricault's Raft of the Medusa (c. 1820), 
+was in part a political commentary on a recent event.  douard Manet's Le D jeuner sur l'Herbe (1863), was considered scandalous not because of the nude woman, but 
+because she is seated next to men fully dressed in the clothing of the time, rather than in robes of the antique world. John Singer Sargent's Madame Pierre Gautreau 
+(Madam X) (1884), caused a controversy over the reddish pink used to color the woman's ear lobe, considered far too suggestive and supposedly ruining the high society 
+model's reputation.
+
+The gradual abandonment of naturalism and the depiction of realistic representations of the visual appearance of subjects in the 19th and 20th centuries led to a rolling 
+controversy lasting for over a century. In the twentieth century, Pablo Picasso's Guernica (1937) used arresting cubist techniques and stark monochromatic oils, to depict 
+the harrowing consequences of a contemporary bombing of a small, ancient Basque town. Leon Golub's Interrogation III (1981), depicts a female nude, hooded detainee 
+strapped to a chair, her legs open to reveal her sexual organs, surrounded by two tormentors dressed in everyday clothing. Andres Serrano's Piss Christ (1989) is a 
+photograph of a crucifix, sacred to the Christian religion and representing Christ's sacrifice and final suffering, submerged in a glass of the artist's own urine. The 
+resulting uproar led to comments in the United States Senate about public funding of the arts.
+
+Theory
+Main article: Aesthetics
+In the nineteenth century, artists were primarily concerned with ideas of truth and beauty. The aesthetic theorist John Ruskin, who championed what he saw as the 
+naturalism of J. M. W. Turner, saw art's role as the communication by artifice of an essential truth that could only be found in nature.[59]
+
+The definition and evaluation of art has become especially problematic since the 20th century. Richard Wollheim distinguishes three approaches to assessing the 
+aesthetic value of art: the Realist, whereby aesthetic quality is an absolute value independent of any human view; the Objectivist, whereby it is also an absolute value, but is 
+dependent on general human experience; and the Relativist position, whereby it is not an absolute value, but depends on, and varies with, the human experience of 
+different humans.[60]
+
+Arrival of Modernism
+
+Composition II in Red, Blue, and Yellow (1930) by Piet Mondrian (Dutch, 1872,1944)
+The arrival of Modernism in the late nineteenth century lead to a radical break in the conception of the function of art,[61] and then again in the late twentieth century with 
+the advent of postmodernism. Clement Greenberg's 1960 article "Modernist Painting" defines modern art as "the use of characteristic methods of a discipline to criticize 
+the discipline itself".[62] Greenberg originally applied this idea to the Abstract Expressionist movement and used it as a way to understand and justify flat (non illusionistic) 
+abstract painting:
+
+Realistic, naturalistic art had dissembled the medium, using art to conceal art; modernism used art to call attention to art. The limitations that constitute the medium of 
+painting,the flat surface, the shape of the support, the properties of the pigment,,were treated by the Old Masters as negative factors that could be acknowledged only 
+implicitly or indirectly. Under Modernism these same limitations came to be regarded as positive factors, and were acknowledged openly.[62]
+
+After Greenberg, several important art theorists emerged, such as Michael Fried, T. J. Clark, Rosalind Krauss, Linda Nochlin and Griselda Pollock among others. Though 
+only originally intended as a way of understanding a specific set of artists, Greenberg's definition of modern art is important to many of the ideas of art within the various 
+art movements of the 20th century and early 21st century.
+
+Pop artists like Andy Warhol became both noteworthy and influential through work including and possibly critiquing popular culture, as well as the art world. Artists of the 
+1980s, 1990s, and 2000s expanded this technique of self criticism beyond high art to all cultural image making, including fashion images, comics, billboards and 
+pornography.
+
+Duchamp once proposed that art is any activity of any kind  everything. However, the way that only certain activities are classified today as art is a social construction.
+[63] There is evidence that there may be an element of truth to this. The Invention of Art: A Cultural History is an art history book which examines the construction of the 
+modern system of the arts i.e. Fine Art. Shiner finds evidence that the older system of the arts before our modern system (fine art) held art to be any skilled human activity 
+i.e. Ancient Greek society did not possess the term art but techne. Techne can be understood neither as art or craft, the reason being that the distinctions of art and craft 
+are historical products that came later on in human history. Techne included painting, sculpting and music but also; cooking, medicine, horsemanship, geometry, 
+carpentry, prophecy and farming etc.
+
+New Criticism and the "Intentional Fallacy"
+Following Duchamp during the first half of the twentieth century, a significant shift to general aesthetic theory took place which attempted to apply aesthetic theory between 
+various forms of art, including the literary arts and the visual arts, to each other. This resulted in the rise of the New Criticism school and debate concerning the intentional 
+fallacy. At issue was the question of whether the aesthetic intentions of the artist in creating the work of art, whatever its specific form, should be associated with the 
+criticism and evaluation of the final product of the work of art, or, if the work of art should be evaluated on its own merits independent of the intentions of the artist.
+
+In 1946, William K. Wimsatt and Monroe Beardsley published a classic and controversial New Critical essay entitled "The Intentional Fallacy", in which they argued 
+strongly against the relevance of an author's intention, or "intended meaning" in the analysis of a literary work. For Wimsatt and Beardsley, the words on the page were all 
+that mattered; importation of meanings from outside the text was considered irrelevant, and potentially distracting.
+
+In another essay, "The Affective Fallacy," which served as a kind of sister essay to "The Intentional Fallacy" Wimsatt and Beardsley also discounted the reader's 
+personal/emotional reaction to a literary work as a valid means of analyzing a text. This fallacy would later be repudiated by theorists from the reader response school of 
+literary theory. Ironically, one of the leading theorists from this school, Stanley Fish, was himself trained by New Critics. Fish criticizes Wimsatt and Beardsley in his 
+essay "Literature in the Reader" (1970).[64]
+
+As summarized by Gaut and Livingston in their essay "The Creation of Art": "Structuralist and post structuralists theorists and critics were sharply critical of many aspects 
+of New Criticism, beginning with the emphasis on aesthetic appreciation and the so called autonomy of art, but they reiterated the attack on biographical criticisms's 
+assumption that the artist's activities and experience were a privileged critical topic."[65] These authors contend that: "Anti intentionalists, such as formalists, hold that the 
+intentions involved in the making of art are irrelevant or peripheral to correctly interpreting art. So details of the act of creating a work, though possibly of interest in 
+themselves, have no bearing on the correct interpretation of the work."[66]
+
+Gaut and Livingston define the intentionalists as distinct from formalists stating that: "Intentionalists, unlike formalists, hold that reference to intentions is essential in fixing 
+the correct interpretation of works." They quote Richard Wollheim as stating that, "The task of criticism is the reconstruction of the creative process, where the creative 
+process must in turn be thought of as something not stopping short of, but terminating on, the work of art itself."[66]
+
+"Linguistic turn" and its debate
+The end of the 20th century fostered an extensive debate known as the linguistic turn controversy, or the "innocent eye debate", and generally referred to as the 
+structuralism poststructuralism debate in the philosophy of art. This debate discussed the encounter of the work of art as being determined by the relative extent to which 
+the conceptual encounter with the work of art dominates over the perceptual encounter with the work of art.[67] Decisive for the linguistic turn debate in art history and the 
+humanities were the works of yet another tradition, namely the structuralism of Ferdinand de Saussure and the ensuing movement of poststructuralism. In 1981, the artist 
+Mark Tansey created a work of art titled "The Innocent Eye" as a criticism of the prevailing climate of disagreement in the philosophy of art during the closing decades of 
+the 20th century. Influential theorists include Judith Butler, Luce Irigaray, Julia Kristeva, Michel Foucault and Jacques Derrida. The power of language, more specifically 
+of certain rhetorical tropes, in art history and historical discourse was explored by Hayden White. The fact that language is not a transparent medium of thought had been 
+stressed by a very different form of philosophy of language which originated in the works of Johann Georg Hamann and Wilhelm von Humboldt.[68] Ernst Gombrich and 
+Nelson Goodman in his book Languages of Art: An Approach to a Theory of Symbols came to hold that the conceptual encounter with the work of art predominated 
+exclusively over the perceptual and visual encounter with the work of art during the 1960s and 1970s.[69] He was challenged on the basis of research done by the Nobel 
+prize winning psychologist Roger Sperry who maintained that the human visual encounter was not limited to concepts represented in language alone (the linguistic turn) 
+and that other forms of psychological representations of the work of art were equally defensible and demonstrable. Sperry's view eventually prevailed by the end of the 
+20th century with aesthetic philosophers such as Nick Zangwill strongly defending a return to moderate aesthetic formalism among other alternatives.[70]
+
+Classification disputes
+Main article: Classificatory disputes about art
+
+The original Fountain by Marcel Duchamp, 1917, photographed by Alfred Stieglitz at the 291 after the 1917 Society of Independent Artists exhibit. Stieglitz used a 
+backdrop of The Warriors by Marsden Hartley to photograph the urinal. The exhibition entry tag can be clearly seen.[71]
+Disputes as to whether or not to classify something as a work of art are referred to as classificatory disputes about art.
+
+Classificatory disputes in the 20th century have included cubist and impressionist paintings, Duchamp's Fountain, the movies, superlative imitations of banknotes, 
+conceptual art, and video games.[72]
+
+Philosopher David Novitz has argued that disagreement about the definition of art are rarely the heart of the problem. Rather, "the passionate concerns and interests that 
+humans vest in their social life" are "so much a part of all classificatory disputes about art" (Novitz, 1996). According to Novitz, classificatory disputes are more often 
+disputes about societal values and where society is trying to go than they are about theory proper. For example, when the Daily Mail criticized Hirst's and Emin's work by 
+arguing "For 1,000 years art has been one of our great civilising forces. Today, pickled sheep and soiled beds threaten to make barbarians of us all" they are not 
+advancing a definition or theory about art, but questioning the value of Hirst's and Emin's work.[73] In 1998, Arthur Danto, suggested a thought experiment showing that 
+"the status of an artifact as work of art results from the ideas a culture applies to it, rather than its inherent physical or perceptible qualities. Cultural interpretation (an art 
+theory of some kind) is therefore constitutive of an object's arthood."[74][75]
+
+Anti art is a label for art that intentionally challenges the established parameters and values of art;[76] it is term associated with Dadaism and attributed to Marcel Duchamp 
+just before World War I,[76] when he was making art from found objects.[76] One of these, Fountain (1917), an ordinary urinal, has achieved considerable prominence 
+and influence on art.[76] Anti art is a feature of work by Situationist International,[77] the lo fi Mail art movement, and the Young British Artists,[76] though it is a form still 
+rejected by the Stuckists,[76] who describe themselves as anti anti art.[78][79]
+
+Value judgment
+
+Aboriginal hollow log tombs. National Gallery, Canberra, Australia
+Somewhat in relation to the above, the word art is also used to apply judgments of value, as in such expressions as "that meal was a work of art" (the cook is an artist), or 
+"the art of deception", (the highly attained level of skill of the deceiver is praised). It is this use of the word as a measure of high quality and high value that gives the term 
+its flavor of subjectivity.
+
+Making judgments of value requires a basis for criticism. At the simplest level, a way to determine whether the impact of the object on the senses meets the criteria to be 
+considered art is whether it is perceived to be attractive or repulsive. Though perception is always colored by experience, and is necessarily subjective, it is commonly 
+understood that what is not somehow aesthetically satisfying cannot be art. However, "good" art is not always or even regularly aesthetically appealing to a majority of 
+viewers. In other words, an artist's prime motivation need not be the pursuit of the aesthetic. Also, art often depicts terrible images made for social, moral, or thought 
+provoking reasons. For example, Francisco Goya's painting depicting the Spanish shootings of 3rd of May 1808 is a graphic depiction of a firing squad executing several 
+pleading civilians. Yet at the same time, the horrific imagery demonstrates Goya's keen artistic ability in composition and execution and produces fitting social and political 
+outrage. Thus, the debate continues as to what mode of aesthetic satisfaction, if any, is required to define 'art'.
+
+The assumption of new values or the rebellion against accepted notions of what is aesthetically superior need not occur concurrently with a complete abandonment of the 
+pursuit of what is aesthetically appealing. Indeed, the reverse is often true, that the revision of what is popularly conceived of as being aesthetically appealing allows for a 
+re invigoration of aesthetic sensibility, and a new appreciation for the standards of art itself. Countless schools have proposed their own ways to define quality, yet they all 
+seem to agree in at least one point: once their aesthetic choices are accepted, the value of the work of art is determined by its capacity to transcend the limits of its 
+chosen medium to strike some universal chord by the rarity of the skill of the artist or in its accurate reflection in what is termed the zeitgeist.
+
+Art is often intended to appeal to and connect with human emotion. It can arouse aesthetic or moral feelings, and can be understood as a way of communicating these 
+feelings. Artists express something so that their audience is aroused to some extent, but they do not have to do so consciously. Art may be considered an exploration of 
+the human condition; that is, what it is to be human.[80]
+An art movement is a tendency or style in art with a specific common philosophy or goal, followed by a group of artists during a restricted period of time, (usually a few 
+months, years or decades) or, at least, with the heyday of the movement defined within a number of years. Art movements were especially important in modern art, when 
+each consecutive movement was considered as a new avant garde.Concept[edit]
+According to theories associated with modernism and the concept of postmodernism, art movements are especially important during the period of time corresponding to 
+modern art.[1] The period of time called "modern art" is posited to have changed approximately half way through the 20th century and art made afterward is generally 
+called contemporary art. Postmodernism in visual art begins and functions as a parallel to late modernism[2] and refers to that period after the "modern" period called 
+contemporary art.[3] The postmodern period began during late modernism (which is a contemporary continuation of modernism), and according to some theorists 
+postmodernism ended in the 21st century.[4][5] During the period of time corresponding to "modern art" each consecutive movement was often considered a new avant 
+garde.[4]
+
+Also during the period of time referred to as "modern art" each movement was seen corresponding to a somewhat grandiose rethinking of all that came before it, 
+concerning the visual arts. Generally there was a commonality of visual style linking the works and artists included in an art movement. Verbal expression and explanation 
+of movements has come from the artists themselves, sometimes in the form of an art manifesto,[6][7] and sometimes from art critics and others who may explain their 
+understanding of the meaning of the new art then being produced.
+
+In the visual arts, many artists, theorists, art critics, art collectors, art dealers and others mindful of the unbroken continuation of modernism and the continuation of 
+modern art even into the contemporary era, ascribe to and welcome new philosophies of art as they appear.[8][9] Postmodernist theorists posit that the idea of art 
+movements are no longer as applicable, or no longer as discernible, as the notion of art movements had been before the postmodern era.[10][11] There are many theorists 
+however who doubt as to whether or not such an era was actually a fact;[4] or just a passing fad.[5][12]
+
+The term refers to tendencies in visual art, novel ideas and architecture, and sometimes literature. In music it is more common to speak about genres and styles instead. 
+See also cultural movement, a term with a broader connotation.
+
+As the names of many art movements use the  ism suffix (for example cubism and futurism), they are sometimes referred to as isms.
+
+19th  and 20th century art movements[edit]
+19th century[edit]
+
+Jacques Louis David, The Coronation of Napoleon, (1806), Mus e du Louvre, History painting
+ 
+
+Eug ne Delacroix, Liberty Leading the People 1830, Romanticism
+ 
+
+Thomas Cole, The Course of Empire: The Savage State 1836, Hudson River School
+ 
+
+Gustave Courbet, Stone Breakers, 1849, Realist School
+ 
+
+Jean Baptiste Camille Corot, c. 1867, Ville d'Avray National Gallery of Art, Washington, DC, Barbizon School[13]
+ 
+
+Claude Monet, Haystacks, (sunset), 1890 1891, Museum of Fine Arts, Boston, Impressionism
+ 
+
+Vincent van Gogh, The Starry Night, 1889, Post Impressionism
+ 
+
+Edvard Munch, 1893, early example of Expressionism
+Academic, c. 16th century 20th century
+Aesthetic Movement
+American Barbizon school
+American Impressionism
+Amsterdam Impressionism
+Art Nouveau, c. 1890 1910
+Arts and Crafts Movement, founded 1860s
+Barbizon school, c. 1830s 1870s
+Biedermeier, c. 1815 1848
+Cloisonnism, c. 1888 1900s (decade)
+Danish Golden Age
+Decadent movement
+Divisionism, c. 1880s 1910s
+D sseldorf School
+Etching revival
+Expressionism, c. 1890s 1930s
+German Romanticism, c. 1790s 1850s
+Gr nderzeit
+Hague School, c. 1860s 1890s
+Heidelberg School, c. 1880s 1900s (decade)
+History painting, c. 15th century 20th century
+Hoosier Group
+Hudson River School, c. 1820s 1900s (decade)
+Impressionism, c. 1860s 1920s
+Incoherents, c. 1882 1890s
+Jugendstil
+Les Nabis, c. 1890s 1900s (decade)
+Les Vingt
+Luminism
+Lyon School
+Macchiaioli c. 1850s 1900s (decade)
+Mir iskusstva, founded 1898
+Modernism, c. 1860s ongoing
+Naturalism
+Nazarene, c. 1810s 1830
+Neo Classicism, c. 1780s 1900s (decade)
+Neo impressionism, c. 1880s 1910s
+Norwegian romantic nationalism, c. 1840 1867
+Norwich School, founded 1803
+Orientalism
+Peredvizhniki
+Pointillism, c. 1880s 1910s
+Pont Aven School, c. 1850s 1890s
+Post Impressionism, c. 1880s 1900s (decade)
+Pre Raphaelite Brotherhood
+Realism, c. 1850s 1900s (decade)
+Realism, c. 1850s 1900s (decade)
+Romanticism, c. 1750s 1890s
+Secession Groups, c. 1890s 1910s
+Society of American Artists, c. 1877 1906
+Spanish Eclecticism, c. 1845 1890s
+Symbolism
+Synthetism, c. 1877 1900s (decade)
+Tonalism, c. 1880 1915
+Vienna Secession, founded 1897
+White Mountain art, c. 1820s 1870s
+20th century[edit]
+1900 1918[edit]
+
+Wassily Kandinsky, 1903, Der Blaue Reiter 21.1 cm   54.6 cm (8.3 in   21.5 in)
+ 
+
+Pablo Picasso, Family of Saltimbanques, 1905, Picasso's Rose Period
+ 
+
+Henri Matisse 1905, Fauvism
+ 
+
+Pablo Picasso 1907, Proto Cubism
+ 
+
+Georges Braque 1910, Analytic Cubism
+ 
+
+Piet Mondrian, 1912, early De Stijl
+ 
+
+Kazimir Malevich, (Supremus No. 58), Museum of Art, 1916, Suprematism
+ 
+
+Marcel Duchamp, Fountain, 1917, photograph by Alfred Stieglitz, Dada
+Academic, c. 1900s (decade) ongoing
+American realism, c. 1890s 1920s
+Analytic Cubism, c. 1909 1912
+Art Deco, c. 1920s 1940s
+Ashcan School, c. 1890s 1920s
+Berliner Sezession, founded 1898
+Bloomsbury Group, c. 1900s (decade) 1960s
+Camden Town Group, c. 1911 1913
+Constructivism, c. 1920 1922, 1920s 1940s
+Cubism, c. 1906 1919
+Cubo Futurism, c. 1912 1918
+Czech Cubism, c. 1910 1914
+Dada, c. 1916 1922
+Der Blaue Reiter, c. 1911 1914
+De Stijl, c. 1917 1931
+Deutscher Werkbund, founded 1907
+Die Br cke, founded 1905
+Expressionism c. 1890s 1930s
+Fauvism, c. 1900 1910
+Futurism, c. 1909 1916
+German Expressionism, c. 1913 1930
+Group of Seven (Canada), c. 1913 1930s
+Jack of Diamonds, founded 1909
+Luminism (Impressionism), c. 1900s (decade) 1930s
+Modernism, c. 1860s ongoing
+Neo Classicism, c. 1900s (decade) ongoing
+Neo primitivism, from 1913
+Neue K nstlervereinigung M nchen
+Novembergruppe, founded 1918
+Objective Abstraction, c. 1933 1936
+Orphism, c. 1910 1913
+Photo Secession, founded c. 1902
+Picasso's Blue Period, c. 1901 1904
+Picasso's Rose Period, c. 1904 1906
+Picasso's African Period, 1906 1909
+Pittura Metafisica, c. 1911 1920
+Proto Cubism, c. 1906 1908
+Purism, c. 1917 1930s
+Rayonism
+Section d'Or, c. 1912 1914
+Suprematism, formed c. 1915 1916
+Synchromism, founded 1912
+Synthetic Cubism, c. 1912 1919
+The Eight, c. 1909 1918
+The Ten, c. 1897 1920
+Vorticism, founded 1914
+1918 1945[edit]
+
+Theo van Doesburg, Composition XX, 1920, De Stijl
+ 
+
+Max Ernst, The Elephant Celebes (1921), Tate, Surrealism
+ 
+
+Charles Demuth, I Saw the Figure 5 in Gold, 1928, Metropolitan Museum of Art, Precisionism
+ 
+
+Grant Wood, American Gothic, 1930, Social Realism
+American Scene painting, c. 1920s 1950s
+Arbeitsrat f r Kunst
+Art Deco
+Bauhaus, c. 1919 1933
+Concrete art
+Der Ring
+De Stijl, c. 1917 1931
+Ecole de Paris
+Geometric abstraction
+Gruppo 7
+International Style, c. 1920s 1970s
+Kapists, c. 1930s
+Magic Realism
+Neo Romanticism
+Neue Sachlichkeit
+Novecento Italiano
+Novembergruppe, founded 1918
+Precisionism, c. 1918 1940s
+Regionalism (art), c. 1930s 1940s
+Return to order, 1918 1922
+Scuola Romana, c. 1928 1945
+Social Realism, c. 1920s 1960s
+Socialist Realism
+Surrealism, c. 1920s 1960s
+1940 1965[edit]
+
+Arshile Gorky, The Liver is the Cock's Comb (1944), oil on canvas, 731 4   98" (186   249 cm) Albright Knox Art Gallery, Buffalo, New York. Gorky was an Armenian born 
+American painter who had a seminal influence on Abstract Expressionism. De Kooning said: "I met a lot of artists , but then I met Gorky... He had an extraordinary gift 
+for hitting the nail on the head; remarkable. So I immediately attached myself to him and we became very good friends."[14]
+Abstract expressionism
+Action painting
+Arte Povera
+Art Informel
+Assemblage
+Beatnik art
+Chicago Imagists
+CoBrA, c. 1948 1951
+Color Field painting
+Combine painting
+De collage
+Fluxus
+Happening
+Hard Edge Painting
+Kinetic Art
+Kitchen Sink School
+Lettrism
+Lyrical abstraction
+Neo Dada
+New Brutalism
+Northwest School
+Nouveau R alisme
+Op Art
+Organic abstraction
+Outsider Art
+Panic Movement
+Pop Art
+Post painterly abstraction
+Public art
+Retro art
+Serial art
+Shaped canvas
+Situationist International
+Tachism
+Video art
+1965 2000[edit]
+Abstract Illusionism
+Appropriation
+Arte Povera
+Art Photography
+Body Art
+Classical Realism
+Conceptual Art
+Dogme 95
+Earth Art
+Figuration Libre
+Funk art
+Graffiti art
+Hyperrealism
+Installation art
+Internet Art
+Land art
+Late modernism
+Light and Space
+Lowbrow
+Lyrical Abstraction
+Massurrealism
+Minimalism
+Neo Expressionism
+Neo figurative
+Neo pop
+Performance Art
+Postminimalism
+Postmodernism
+Photorealism
+Psychedelic art
+Relational art
+Site specific art
+Sound Art
+Steampunk
+Transavanguardia
+Young British Artists
+21st century[edit]
+Algorithmic art
+Altermodernism
+Computer art
+Computer graphics
+Digital art
+Electronic Art
+Environmental art
+Excessivism
+Intentism
+Internet art
+Intervention art
+Maximalism
+Metamodernism
+Neo minimalism
+New Media Art
+Post postmodernism
+Relational art
+Remodernism
+SoFlo Superflat
+Stuckism International
+Superflat
+Superstroke
+Transgressive art
+Virtual art
+See also[edit]
+List of art movements
+Post expressionism
+20th century Western painting
+Western art history
+art periods
+Modern art includes artistic work produced during the period extending roughly from the 1860s to the 1970s, and denotes the style and philosophy of the art produced 
+during that era.[1] The term is usually associated with art in which the traditions of the past have been thrown aside in a spirit of experimentation.[2] Modern artists 
+experimented with new ways of seeing and with fresh ideas about the nature of materials and functions of art. A tendency away from the narrative, which was 
+characteristic for the traditional arts, toward abstraction is characteristic of much modern art. More recent artistic production is often called contemporary art or 
+postmodern art.
+
+Modern art begins with the heritage of painters like Vincent van Gogh, Paul C zanne, Paul Gauguin, Georges Seurat and Henri de Toulouse  Lautrec all of whom were 
+essential for the development of modern art. At the beginning of the 20th century Henri Matisse and several other young artists including the pre  cubists Georges Braque, 
+Andr  Derain, Raoul Dufy, Jean Metzinger and Maurice de Vlaminck revolutionized the Paris art world with "wild", multi  colored, expressive landscapes and figure 
+paintings that the critics called Fauvism. Henri Matisse's two versions of The Dance signified a key point in his career and in the development of modern painting.[3] It 
+reflected Matisse's incipient fascination with primitive art: the intense warm color of the figures against the cool blue  green background and the rhythmical succession of 
+the dancing nudes convey the feelings of emotional liberation and hedonism.
+
+Initially influenced by Toulouse  Lautrec, Gauguin and other late 19th century innovators, Pablo Picasso made his first cubist paintings based on C zanne's idea that all 
+depiction of nature can be reduced to three solids: cube, sphere and cone. With the painting Les Demoiselles d'Avignon (1907), Picasso dramatically created a new and 
+radical picture depicting a raw and primitive brothel scene with five prostitutes, violently painted women, reminiscent of African tribal masks and his own new Cubist 
+inventions. Analytic cubism was jointly developed by Pablo Picasso and Georges Braque, exemplified by Violin and Candlestick, Paris, from about 1908 through 1912. 
+Analytic cubism, the first clear manifestation of cubism, was followed by Synthetic cubism, practiced by Braque, Picasso, Fernand L ger, Juan Gris, Albert Gleizes, 
+Marcel Duchamp and several other artists into the 1920s. Synthetic cubism is characterized by the introduction of different textures, surfaces, collage elements, papier 
+coll  and a large variety of merged subject matter.Roots in the 19th century[edit]
+Multi  colored portrait of a far eastern cortesan with elaborate hair ornamentation, colorful robelike garment, and a border depicting marshland waters and reeds.
+Vincent van Gogh, Courtesan (after Eisen) (1887), Van Gogh Museum
+Portrait of a tree with blossoms and with far eastern alphabet letters both in the portrait and along the left and right borders.
+Vincent van Gogh, The Blooming Plumtree (after Hiroshige) (1887), Van Gogh Museum
+Portrait of a man of a bearded man facing forward, holding his own hands in his lap; wearing a hat, blue coat, beige collared shirt and brown pants; sitting in front of a 
+background with various tiles of far eastern and nature themed art.
+Vincent van Gogh, Portrait of P re Tanguy (1887), Mus e Rodin
+Although modern sculpture and architecture are reckoned to have emerged at the end of the 19th century, the beginnings of modern painting can be located earlier.[5] 
+The date perhaps most commonly identified as marking the birth of modern art is 1863,[6] the year that  douard Manet showed his painting Le d jeuner sur l'herbe in the 
+Salon des Refus s in Paris. Earlier dates have also been proposed, among them 1855 (the year Gustave Courbet exhibited The Artist's Studio) and 1784 (the year 
+Jacques  Louis David completed his painting The Oath of the Horatii).[6] In the words of art historian H. Harvard Arnason: "Each of these dates has significance for the 
+development of modern art, but none categorically marks a completely new beginning .... A gradual metamorphosis took place in the course of a hundred years."[6]
+
+The strands of thought that eventually led to modern art can be traced back to the Enlightenment, and even to the 17th century.[7] The important modern art critic Clement 
+Greenberg, for instance, called Immanuel Kant "the first real Modernist" but also drew a distinction: "The Enlightenment criticized from the outside ... . Modernism 
+criticizes from the inside."[8] The French Revolution of 1789 uprooted assumptions and institutions that had for centuries been accepted with little question and 
+accustomed the public to vigorous political and social debate. This gave rise to what art historian Ernst Gombrich called a "self  consciousness that made people select the 
+style of their building as one selects the pattern of a wallpaper."[9]
+
+The pioneers of modern art were Romantics, Realists and Impressionists.[10] By the late 19th century, additional movements which were to be influential in modern art had 
+begun to emerge: post  Impressionism as well as Symbolism.
+
+Influences upon these movements were varied: from exposure to Eastern decorative arts, particularly Japanese printmaking, to the coloristic innovations of Turner and 
+Delacroix, to a search for more realism in the depiction of common life, as found in the work of painters such as Jean  Fran ois Millet. The advocates of realism stood 
+against the idealism of the tradition  bound academic art that enjoyed public and official favor.[11] The most successful painters of the day worked either through 
+commissions or through large public exhibitions of their own work. There were official, government  sponsored painters' unions, while governments regularly held public 
+exhibitions of new fine and decorative arts.
+
+The Impressionists argued that people do not see objects but only the light which they reflect, and therefore painters should paint in natural light (en plein air) rather than 
+in studios and should capture the effects of light in their work.[12] Impressionist artists formed a group, Soci t  Anonyme Coop rative des Artistes Peintres, Sculpteurs, 
+Graveurs ("Association of Painters, Sculptors, and Engravers") which, despite internal tensions, mounted a series of independent exhibitions.[13] The style was adopted 
+by artists in different nations, in preference to a "national" style. These factors established the view that it was a "movement". These traits,establishment of a working 
+method integral to the art, establishment of a movement or visible active core of support, and international adoption,would be repeated by artistic movements in the Modern 
+period in art.
+
+Early 20th century[edit]
+
+Pablo Picasso Les Demoiselles d'Avignon 1907, Museum of Modern Art, New York
+
+Henri Matisse, The Dance I, 1909, Museum of Modern Art, New York
+Among the movements which flowered in the first decade of the 20th century were Fauvism, Cubism, Expressionism, and Futurism.
+
+During the years between 1910 and the end of World War I and after the heyday of cubism, several movements emerged in Paris. Giorgio de Chirico moved to Paris in 
+July 1911, where he joined his brother Andrea (the poet and painter known as Alberto Savinio). Through his brother he met Pierre Laprade, a member of the jury at the 
+Salon d'Automne where he exhibited three of his dreamlike works: Enigma of the Oracle, Enigma of an Afternoon and Self  Portrait. During 1913 he exhibited his work at 
+the Salon des Ind pendants and Salon d  Automne, and his work was noticed by Pablo Picasso, Guillaume Apollinaire, and several others. His compelling and mysterious 
+paintings are considered instrumental to the early beginnings of Surrealism. Song of Love (1914) is one of the most famous works by de Chirico and is an early example 
+of the surrealist style, though it was painted ten years before the movement was "founded" by Andr  Breton in 1924.
+
+World War I brought an end to this phase but indicated the beginning of a number of anti  art movements, such as Dada, including the work of Marcel Duchamp, and of 
+Surrealism. Artist groups like de Stijl and Bauhaus developed new ideas about the interrelation of the arts, architecture, design, and art education.
+
+Modern art was introduced to the United States with the Armory Show in 1913 and through European artists who moved to the U.S. during World War I.
+
+After World War II[edit]
+It was only after World War II, however, that the U.S. became the focal point of new artistic movements.[14] The 1950s and 1960s saw the emergence of Abstract 
+Expressionism, Color field painting, Pop art, Op art, Hard  edge painting, Minimal art, Lyrical Abstraction, Fluxus, Happening, Video art, Postminimalism, Photorealism and 
+various other movements. In the late 1960s and the 1970s, Land art, Performance art, Conceptual art, and other new art forms had attracted the attention of curators and 
+critics, at the expense of more traditional media.[15] Larger installations and performances became widespread.
+
+By the end of the 1970s, when cultural critics began speaking of "the end of painting" (the title of a provocative essay written in 1981 by Douglas Crimp), new media art 
+had become a category in itself, with a growing number of artists experimenting with technological means such as video art.[16] Painting assumed renewed importance in 
+the 1980s and 1990s, as evidenced by the rise of neo  expressionism and the revival of figurative painting.[17]
+
+Towards the end of the 20th century, a number of artists and architects started questioning the idea of "the modern" and created typically Postmodern works.[18]
+
+Art movements and artist groups[edit]
+(Roughly chronological with representative artists listed.)
+
+19th century[edit]
+Romanticism and the Romantic movement   Francisco de Goya, J. M. W. Turner, Eug ne Delacroix
+Realism   Gustave Courbet, Camille Corot, Jean  Fran ois Millet, Rosa Bonheur
+Impressionism   Fr d ric Bazille, Gustave Caillebotte, Mary Cassatt, Edgar Degas, Armand Guillaumin,  douard Manet, Claude Monet, Berthe Morisot, Pierre  Auguste 
+Renoir, Camille Pissarro, Alfred Sisley
+Post  impressionism   Georges Seurat, Paul C zanne, Paul Gauguin, Vincent van Gogh, Henri de Toulouse  Lautrec, Henri Rousseau, Henri  Jean Guillaume Martin, Albert 
+Lebourg, Robert Antoine Pinchon
+Symbolism   Gustave Moreau, Odilon Redon, Edvard Munch, James Whistler, James Ensor
+Les Nabis   Pierre Bonnard,  douard Vuillard, F lix Vallotton, Maurice Denis, Paul Serusier
+Art Nouveau and variants   Jugendstil, Modern Style, Modernisme   Aubrey Beardsley, Alphonse Mucha, Gustav Klimt,
+Art Nouveau architecture and design   Antoni Gaud , Otto Wagner, Wiener Werkst tte, Josef Hoffmann, Adolf Loos, Koloman Moser
+Divisionism   Jean Metzinger, Robert Delaunay, Paul Signac, Henri  Edmond Cross
+Early Modernist sculptors   Aristide Maillol, Auguste Rodin
+Early 20th century (before World War I)[edit]
+Abstract art   Francis Picabia, Wassily Kandinsky, Franti ek Kupka, Robert Delaunay, L opold Survage, Piet Mondrian
+Fauvism   Andr  Derain, Henri Matisse, Maurice de Vlaminck, Georges Braque
+Expressionism and related   Die Br cke, Der Blaue Reiter    Ernst Ludwig Kirchner, Wassily Kandinsky, Franz Marc, Egon Schiele, Oskar Kokoschka, Emil Nolde, Axel 
+T rneman, Karl Schmidt  Rottluff, Max Pechstein
+Futurism   Giacomo Balla, Umberto Boccioni, Carlo Carr , Gino Severini, Natalia Goncharova, Mikhail Larionov
+Cubism   Pablo Picasso, Georges Braque, Jean Metzinger, Albert Gleizes, Fernand L ger, Robert Delaunay, Henri Le Fauconnier, Marcel Duchamp, Jacques Villon, 
+Francis Picabia, Juan Gris
+Sculpture   Pablo Picasso, Henri Matisse, Constantin Br ncu i, Joseph Csaky, Alexander Archipenko, Raymond Duchamp  Villon, Jacques Lipchitz, Ossip Zadkine
+Orphism   Robert Delaunay, Sonia Delaunay, Franti ek Kupka
+Photography   Pictorialism, Straight photography
+Suprematism   Kasimir Malevich, Alexander Rodchenko, El Lissitzky
+Synchromism   Stanton MacDonald  Wright, Morgan Russell
+Vorticism   Wyndham Lewis
+Dada   Jean Arp, Marcel Duchamp, Max Ernst, Francis Picabia, Kurt Schwitters
+World War I to World War II[edit]
+Pittura Metafisica   Giorgio de Chirico, Carlo Carr , Giorgio Morandi
+De Stijl   Theo van Doesburg, Piet Mondrian
+Expressionism   Egon Schiele, Amedeo Modigliani, Chaim Soutine
+New Objectivity   Max Beckmann, Otto Dix, George Grosz
+Figurative painting   Henri Matisse, Pierre Bonnard
+American Modernism   Stuart Davis, Arthur G. Dove, Marsden Hartley, Georgia O'Keeffe
+Constructivism   Naum Gabo, Gustav Klutsis, L szl  Moholy  Nagy, El Lissitzky, Kasimir Malevich, Vadim Meller, Alexander Rodchenko, Vladimir Tatlin
+Surrealism   Marc Chagall, Ren  Magritte, Jean Arp, Salvador Dal , Max Ernst, Giorgio de Chirico, Andr  Masson, Joan Mir 
+Bauhaus   Wassily Kandinsky, Paul Klee, Josef Albers
+Sculpture   Alexander Calder, Alberto Giacometti, Gaston Lachaise, Henry Moore, Pablo Picasso, Julio Gonzalez
+Scottish Colourists   Francis Cadell, Samuel Peploe, Leslie Hunter, John Duncan Fergusson
+Suprematism   Kazimir Malevich, Aleksandra Ekster, Olga Rozanova, Nadezhda Udaltsova, Ivan Kliun, Lyubov Popova, Nikolai Suetin, Nina Genke  Meller, Ivan Puni, 
+Ksenia Boguslavskaya
+Precisionism   Charles Sheeler, Charles Demuth
+After World War II[edit]
+Figuratifs   Bernard Buffet, Jean Carzou, Maurice Boitel, Daniel du Janerand, Claude  Max Lochu
+Sculpture   Henry Moore, David Smith, Tony Smith, Alexander Calder, Isamu Noguchi,[19] Alberto Giacometti, Sir Anthony Caro, Jean Dubuffet, Isaac Witkin, Ren  Ich , 
+Marino Marini, Louise Nevelson, Albert Vrana
+Abstract expressionism   Willem de Kooning, Jackson Pollock, Hans Hofmann, Franz Kline, Robert Motherwell, Clyfford Still, Lee Krasner, Joan Mitchell
+American Abstract Artists   Ilya Bolotowsky, Ibram Lassaw, Ad Reinhardt, Josef Albers, Burgoyne Diller
+Art Brut   Adolf W lfli, August Natterer, Ferdinand Cheval, Madge Gill, Paul Salvator Goldengreen
+Arte Povera   Jannis Kounellis, Luciano Fabro, Mario Merz, Piero Manzoni, Alighiero Boetti
+Color field painting   Barnett Newman, Mark Rothko, Adolph Gottlieb, Sam Francis, Morris Louis, Kenneth Noland, Jules Olitski, Helen Frankenthaler
+Tachisme   Jean Dubuffet, Pierre Soulages, Hans Hartung, Ludwig Merwart
+COBRA   Pierre Alechinsky, Karel Appel, Asger Jorn
+De  collage   Wolf Vostell, Mimmo Rotella
+Neo  Dada   Robert Rauschenberg, Jasper Johns, John Chamberlain, Joseph Beuys, Lee Bontecou, Edward Kienholz
+Figurative Expressionism    Larry Rivers, Grace Hartigan, Elaine de Kooning, Robert De Niro, Sr., Lester Johnson, George McNeil, Earle M. Pilgrim, Jan M ller, Robert 
+Beauchamp, Bob Thompson
+Fluxus   George Maciunas, Joseph Beuys, Wolf Vostell, Nam June Paik, Daniel Spoerri, Dieter Roth, Carolee Schneeman, Alison Knowles, Charlotte Moorman, Dick 
+Higgins
+Happening   Allan Kaprow, Joseph Beuys, Wolf Vostell, Claes Oldenburg, Jim Dine, Red Grooms, Nam June Paik, Charlotte Moorman, Robert Whitman, Yoko Ono
+Dau  al  Set   founded in Barcelona by poet/artist Joan Brossa,   Antoni T pies
+Grupo El Paso   founded in Madrid by artists Antonio Saura, Pablo Serrano
+Geometric abstraction   Wassily Kandinsky, Kazimir Malevich, Nadir Afonso, Manlio Rho, Mario Radice, Mino Argento
+Hard  edge painting   John McLaughlin, Ellsworth Kelly, Frank Stella, Al Held, Ronald Davis
+Kinetic art   George Rickey, Getulio Alviani
+Land art   Christo, Richard Long, Robert Smithson, Michael Heizer
+Les Automatistes   Claude Gauvreau, Jean  Paul Riopelle, Pierre Gauvreau, Fernand Leduc, Jean  Paul Mousseau, Marcelle Ferron
+Minimal art   Sol LeWitt, Donald Judd, Dan Flavin, Richard Serra, Agnes Martin
+Postminimalism   Eva Hesse, Bruce Nauman, Lynda Benglis
+Lyrical abstraction   Ronnie Landfield, Sam Gilliam, Larry Zox, Dan Christensen, Natvar Bhavsar, Larry Poons
+Neo  figurative art   Fernando Botero, Antonio Berni
+Neo  expressionism   Georg Baselitz, Anselm Kiefer, J rg Immendorff, Jean  Michel Basquiat
+Transavanguardia   Francesco Clemente, Mimmo Paladino, Sandro Chia, Enzo Cucchi
+Figuration libre   Herv  Di Rosa, Fran ois Boisrond, Robert Combas
+New realism   Yves Klein, Pierre Restany, Arman
+Op art   Victor Vasarely, Bridget Riley, Richard Anuszkiewicz, Jeffrey Steele
+Outsider art   Howard Finster, Grandma Moses, Bob Justin
+Photorealism   Audrey Flack, Chuck Close, Duane Hanson, Richard Estes, Malcolm Morley
+Pop art   Richard Hamilton, Robert Indiana, Jasper Johns, Roy Lichtenstein, Robert Rauschenberg, Andy Warhol, Ed Ruscha, David Hockney
+Postwar European figurative painting   Lucian Freud, Francis Bacon, Frank Auerbach, Gerhard Richter
+New European Painting   Luc Tuymans, Marlene Dumas, Neo Rauch, Bracha Ettinger, Micha l Borremans, Chris Ofili
+Shaped canvas   Frank Stella, Kenneth Noland, Ron Davis, Robert Mangold.
+Soviet art   Aleksandr Deyneka, Aleksandr Gerasimov, Ilya Kabakov, Komar & Melamid, Alexandr Zhdanov, Leonid Sokov
+Spatialism   Lucio Fontana
+Video art   Nam June Paik, Wolf Vostell, Joseph Beuys, Bill Viola
+Visionary art   Ernst Fuchs, Paul Laffoley, Michael BowenThe history of art is the history of any activity or product made by humans in a visual form for aesthetical or communicative purposes, expressing ideas, emotions or, in general, a worldview. Over time visual art has been classified in diverse ways, from the medieval distinction between liberal arts and mechanical arts, to the modern distinction between fine arts and applied arts, or to the many contemporary definitions, which define art as a manifestation of human creativity. The subsequent expansion of the list of principal arts in the 20th century reached to nine: architecture, dance, sculpture, music, painting, poetry (described broadly as a form of literature with aesthetic purpose or function, which also includes the distinct genres of theatre and narrative), film, photography and graphic arts. In addition to the old forms of artistic expression such as fashion and gastronomy, new modes of expression are being considered as arts such as video, computer art, performance, advertising, animation, television and videogames.
+
+The history of art is a multidisciplinary branch of the arts and sciences, seeking an objective examination of art throughout time, classifying cultures, establishing periodizations, and observing the distinctive and influential characteristics of art.[1] The study of the history of art was initially developed during the Renaissance, with its limited scope being the artistic production of Western civilization. However, as time has passed, it has imposed a broader view of artistic history, seeking a comprehensive overview of all the civilizations and analysis of their artistic production in terms of their own cultural values (cultural relativism), and not just western art history.
+
+Today, art enjoys a wide network of study, dissemination and preservation of all the artistic legacy of mankind throughout history. The 20th century has seen the proliferation of institutions, foundations, art museums and galleries, in both the public and private sectors, dedicated to the analysis and cataloging of works of art as well as exhibitions aimed at a mainstream audience. The rise of media has been crucial in improving the study and dissemination of art. International events and exhibitions like the Whitney Biennial and biennales of Venice and S o Paulo or the Documenta of Kassel have helped the development of new styles and trends. Prizes such as the Turner of the Tate Gallery, the Wolf Prize in Arts, the Pritzker Prize of architecture, the Pulitzer of photography and the Oscar of cinema also promote the best creative work on an international level. Institutions like UNESCO, with the establishment of the World Heritage Site lists, also help the conservation of the major monuments of the planet.[2]Historical development[edit]
+
+The Sakyamuni Buddha, by Zhang Shengwen, c. 1173   1176 CE, Chinese Song Dynasty period
+Main article: Art history  Historical development
+The field of "art history" was developed in the West, and originally dealt exclusively with European art history, with the High Renaissance (and its Greek precedent) as the defining standard. Gradually, over the course of the 20th century, a wider vision of art history has developed. This expanded version includes societies from across the globe, and it usually attempts to analyze artifacts in terms of the cultural values in which they were created. Thus, art history is now seen to encompass all visual art, from the megaliths of Western Europe to the paintings of the Tang Dynasty in China.
+
+The history of art is often told as a chronology of masterpieces created in each civilization. It can thus be framed as a story of high culture, epitomized by the Wonders of the World. On the other hand, vernacular art expressions can also be integrated into art historical narratives, in which case they are usually referred to as folk arts or craft. The more closely that an art historian engages with these latter forms of low culture, the more likely it is that they will identify their work as examining visual culture or material culture, or as contributing to fields related to art history, such as anthropology or archeology. In the latter cases art objects may be referred to as archeological artifacts.
+
+Prehistory and ancient history background[edit]
+A useful way to examine how art history is organized is through the major survey textbooks, which reflect an encyclopedic view of great art. Frequently consulted textbooks published in English are Ernst Gombrich  s Story of Art, Marilyn Stokstad  s Art History, Anthony Janson  s History of Art, David Wilkins, Bernard Schultz, and Katheryn M. Linduff  s Art Past, Art Present, Helen Gardner  s Art Through the Ages, Hugh Honour and John Flemming  s A World History of Art, and Laurie Schneider Adams  s Art Across Time. One of the best places to find information on canonical art history is the Heilbrunn Timeline of Art History, sponsored by the Metropolitan Museum of Art in New York.
+
+
+Ludovisi Battle sarcophagus (250,260 CE), with battle between Roman soldiers and barbarians. The general may be Hostilian, Emperor Decius' son (died 252 CE).
+Global Prehistory[edit]
+
+Venus of Willendorf, Naturhistorisches Museum
+Main article: Prehistoric art
+The first tangible artifacts of human art are found from the Stone Age (Upper Paleolithic, Mesolithic and Neolithic), periods when the first demonstrations that can be considered art by humans, appear. During the Paleolithic (25000  8000 BCE), man practiced hunting and lived in caves, where cave painting was developed.[3] After a transitional period (Mesolithic, 8000 6000 BCE), in the Neolithic period (6000 3000 BCE), when man became sedentary and engaged in agriculture, with societies becoming increasingly complex and religion gaining importance, the production of handicrafts commenced. Finally, in the Bronze Age (c. 3000   1000 BCE), the first protohistoric civilizations arise.
+
+Paleolithic[edit]
+Main articles: Paleolithic art and List of Stone Age art
+The Paleolithic had its first artistic manifestation on 25,000 BCE, reaching its peak in the Magdalenian period ( 15,000  8000 BCE). The first traces of man  made objects appear in southern Africa, the Western Mediterranean, Central and Eastern Europe (Adriatic Sea), Siberia (Baikal Lake), India and Australia. These first traces are generally worked stone (flint, obsidian), wood or bone tools. To paint in red, iron oxide was used, in black, manganese oxide and in ochre, clay.[4] Surviving art from this period is small carvings in stone or bone and cave painting, this especially from in the Franco  Cantabrian region; there are pictures with magical  religious character and also pictures with a naturalistic sense, which depict animals, notably the caves of Altamira, Trois Fr res, Chauvet and Lascaux. Sculpture is represented by the so  called Venus figurines, feminine figures which were probably used in fertility cults, such as the Venus of Willendorf.[5] Other representative works of this period are the Man from Brno[6] and the Venus of Brassempouy.[7]
+
+Neolithic[edit]
+Main article: Neolithic
+
+Cave painting at Roca dels Moros, in El Cogul
+This period from c. 8000 BCE in the Near East was a profound change for the ancient man, who became sedentary and engaged in agriculture and animal husbandry, new forms of social coexistence and religion developed.[8] The rock art of the Iberian Mediterranean Basin dated between Mesolithic and Neolithic contained small, schematic human and figures, with notable examples in El Cogul, Valltorta, Alpera and Minateda. This kind of painting was also similar in northern Africa (Atlas, Sahara) and in the area of modern Zimbabwe. Neolithic painting was schematic, reduced to basic strokes (man in the form of a cross and woman in a triangular shape). There are equally noteworthy cave paintings in Pinturas River in Argentina, especially the Cueva de las Manos. In portable art, the Cardium Pottery was produced, decorated with imprints of seashells. New materials were produced like amber, crystal of rock, quartz, jasper, etc. In this period there appear the first traces of urbanistic planimetry, noting the remains in Tell as  Sultan (Jericho), Jarmo (Iraq) and  atalh y k (Anatolia).[9]
+
+Metal Age[edit]
+
+Megalithic complex of Stonehenge
+The last prehistoric phase is the Metal Age, as the use of elements such as copper, bronze and iron proved to be a great material transformation for these ancient societies. In the Chalcolithic (also called Copper Age) the Megalith emerged, monuments of stone, i.e. the dolmen and menhir or the English cromlech, as in the complexes at Newgrange and Stonehenge.[8] In Spain the Los Millares culture was formed, characterized by the Beaker culture and pictured human figures with big eyes. In Malta, noteworthy are the temple complexes of  a ar Qim, Mnajdra, Tarxien and  gantija. In the Balearic Islands notable megalithic cultures developed, with different types of monuments: the naveta, a tomb shaped like a truncated pyramid, with an elongated burial chamber; the taula, two large stones, one put vertically and the other horizontally above each other; and the talaiot, a tower with a covered chamber and a false dome.[10]
+
+In the Iron Age the cultures of Hallstatt (Austria) and La Tene (Switzerland) mark the significant phases in Europe. The first was developed between the 7th and 5th century BCE by the necropoleis with tumular tombs and a wooden burial chamber in the form of a house, often accompanied by a four  wheel cart. The pottery was polychromic, with geometric decorations and applications of metallic ornaments. La Tene was developed between the 5th and 4th century BCE, and is more popularly known as early Celtic art. It produced many iron objects such as swords and spears, which have not survived well, but bronze continued to be used for highly decorated shields, fibulas, and other objects, with different stages of evolution of the style (La Tene I, II and III). Decoration was influenced by Greek, Etruscan and Scythian art.[11] In most of the continent conquest by the Roman Empire brought the style to an end.
+
+
+Venus of Brassempouy, Mus e des Antiquit s Nationales, Saint  Germain  en  Laye
+ 
+
+Menhir in the region of Brittany (France)
+ 
+
+Circular talaiot in the island of Mallorca (Spain)
+ 
+
+Solar cart of Trundholm (Denmark)
+Ancient Mediterranean Art[edit]
+
+Splint on Flood myth, of the Epic of Gilgamesh
+Main article: Ancient art
+Art, in the first period of history, began with the invention of writing, founded by the great civilizations of Near East: Egypt and Mesopotamia. This period also differed from others because artistic manifestations occurred in every culture of all the continents. In this period appear the first great cities in the main big rivers: Nile, Tigris and Euphrates, Indus and Yellow River.
+
+One of the great advances of this period was writing, generated primarily by the need to keep records of economical and commercial nature. The first writing code was the cuneiform script, which emerged in Mesopotamia c. 3500 BCE, written on clay tablets. It was based on pictographic and ideographic elements, while later Sumerians developed syllables for writing, reflecting the phonology and syntax of the Sumerian language. In Egypt hieroglyphic writing was developed, with the first sample being the Narmer Palette (3100 BCE). The Hebrew language was one of the first languages to utilize the method of writing with an alphabet (Abjad, c. 1800 BCE), which relates a unique symbol for each phoneme; the Greek and the Latin alphabet derive from it.[12]
+
+Mesopotamia[edit]
+Main article: Mesopotamian art
+
+Diorite Statue I, patesi of Lagash (2120 BCE), Louvre Museum, Paris
+Mesopotamian art was developed in the area between Tigris and Euphrates (modern day Syria and Iraq), where from the 4th millennium BCE many different cultures existed such as Sumer, Akkad, Amorite, Chaldea, etc. Mesopotamian architecture was characterized by the use of brick, lintel and the introduction of construction elements like arc and vault. Notable are the ziggurats, large temples with the form of a terraced step pyramid, from which we have practically no traces left except their bases. The tomb was usually a corridor, with a covered chamber and a false dome, as in some examples found in Ur. There were also palaces walled with a terrace in the form of a ziggurat, giving great importance to gardens (the Hanging Gardens of Babylon is one of the Seven Wonders of the Ancient World).
+
+Sculpture was developed through wood carving and relief and was used in religious, military and hunting scenes, depicting both human and animal figures, whether they were real or mythological. In the Sumerian period there were small statues of angular form, with colored stone, bald head and with hands on the chest. In the Akkadian period there were figures with long hair and beard, noting the stele of Naram  Sin. In the Amorite period (or Neosumerian) notable is the representation of king Gudea of Lagash, with his mantle and a turban on his head and his hands on the chest. During Babylonian rule famous is the stele of Hammurabi. Assyrian sculpture is notable for its anthropomorphism of cattle and the winged genie, which is seen flying in many reliefs depicting war and hunting scenes, as in the Black Obelisk of Shalmaneser III.[13]
+
+With the advent of writing, arose literature as a means of expressing human creativity. The Sumerian literature is represented by the Epic of Gilgamesh, written in the 17th century BCE. In it were written thirty myths about the most important Sumerian and Akkadian deities, which are: Innanas descent to hell and the cycle of gods Enki and Tammuz. Another example of relevance is the poem Lugal ud melambi Nirpal (The hardship of Ninurta), whose content type is moral and didactic. During Akkadian period notable is Atrahasis, which includes the flood myth. In Babylonian literature notable is the poem En ma Eli , which describes the creation of the world.[14]
+
+The music was developed in this region between 4th and 3rd millennium BCE, used in Sumerian temples, where priests sang hymns and psalms (ersemma) to the gods. The liturgic chant was composed of responsories song alternated between the priests and choir and antiphons song alternated between two choirs. They had several instruments like tigi (flute), balag (drum), lilis (predecessor of timpani), algar (lyre), zagsal (harp) and adapa (pandeiro).[15]
+
+Egypt[edit]
+Main article: Ancient Egyptian art
+
+The pyramids of Giza
+In Egypt arose one of the first great civilizations, with elaborate and complex works of art, which assume the professional specialization of the artist/craftsman. Its art was intensely religious and symbolic, with a highly centralized power structure and hierarchy, giving great importance to the religious concept of immortality, especially of the pharaoh, for whom were built great monuments. The Egyptian art spans from 3,000 BCE until the conquest of Egypt by Alexander the Great. However its influence persisted in the Coptic art and Byzantine art.
+
+The architecture is characterized by its monumentality, achieved by the use of stones in large blocks, lintel and solid columns. Notable are the funerary monuments, with three main types: mastaba, tomb of rectangular form; pyramid, which can be a step pyramid (Saqqarah) or smooth sided (Giza); and the hypogeum, underground tomb (Valley of the Kings). The other great building is the temple, a monumental complex preceded by an avenue of sphinxes and obelisks, which give way to two pylons and trapezoid walls, a hypaethros, a hypostyle hall and a shrine. Notable are the temples of Karnak, Luxor, Philae and Edfu. Another type of temple is the rock temple, which has the form of a hypogeum, like in Abu Simbel and Deir el  Bahari.
+
+Painting was characterized by the juxtaposition of overlapping planes. The images were represented hierarchically, i.e., the Pharaoh is larger than the subjects or enemies at his side. Egyptians painted the head and limbs in profile, while the shoulders and eyes in front. Applied arts were developed significantly in Egypt, in particular woodwork and metalwork, with superb examples like cedar furniture inlaid with ebony and ivory of the tombs at the Egyptian Museum, or the pieces found in Tutankhamun's tomb, which are of great artistic quality.[16]
+
+
+Aurochs on a cave painting in Lascaux, France
+Greece and Etruria[edit]
+Greek and Etruscan artists built on the artistic foundations of Egypt, further developing the arts of sculpture, painting, architecture, and ceramics. The body became represented in a more representational manner, and patronage of art thrived, at this time.
+
+Rome[edit]
+Roman art is sometimes viewed as derived from Greek precedents, but also has its own distinguishing features. Roman sculpture is often less idealized than the Greek precedents. Roman architecture often used concrete, and the round arch and dome was invented at this time.
+
+The encyclopedic view of the history of art[edit]
+Although some of the books listed above attempt a global approach, they are universally strong in western art history. The books use representative examples from each era in order to create a story that blends changing styles with social history. The Western narrative begins with prehistoric art such as Stonehenge, before discussing the ancient world. The latter begins with Mesopotamia, then progresses to the art of Ancient Egypt, which then transitions to Classical antiquity. Classical art includes both Greek and Roman work.
+
+Europe[edit]
+This encyclopedia view of the history of art begins with a section on the European context in chronological sequence.
+
+Medieval[edit]
+
+The interior of the Hagia Sophia in Istanbul, Turkey
+With the decline of the Roman Empire, the narrative shifts to Medieval art, which lasted for a millennium. Early Christian art begins the period, followed by Byzantine art, Anglo  Saxon art, Viking art, Ottonian art, Romanesque art and Gothic art, with Islamic art dominating the eastern Mediterranean and beyond. The Medieval era ended with the Renaissance, followed by Mannerism, the Baroque and Rococo. In Byzantine and Gothic art of the Middle Ages, the dominance of the church insisted on the expression of biblical truths. There was no need to depict the reality of the material world, in which man was born in a "state of sin", especially through the extensive use of gold in paintings, which also presented figures in idealised, patterned (i.e."flat") forms.
+
+Renaissance and Baroque[edit]
+The Renaissance is the return yet again to valuation of the material world, and this paradigm shift is reflected in art forms, which show the corporeality of the human body, and the three  dimensional reality of landscape. Although textbooks periodize Western art by movements, as described above, they also do so by century, especially in Italian art. Many art historians give a nod to the historical importance of Italian Renaissance and Baroque art by referring to centuries in which it was prominent with the Italian terms: trecento for the fourteenth century, quattrocento for the fifteenth, cinquecento for the sixteenth, seicento for the seventeenth, and settecento for the eighteenth.
+
+Neoclassicalism to Realism[edit]
+The 18th and 19th centuries included Neoclassicism, Romantic art, Academic art, and Realism in art. Art historians disagree when Modern art began, some tracing it as far back as Francisco Goya in the Napoleonic period, the mid  19th century with the industrial revolution or the late 19th century with the advent of Impressionism. The art movements of the late 19th through the early 21st centuries are too numerous to detail here, but can be broadly divided into two categories: Modernism and Contemporary art. The latter is sometimes referred to with another term, which has a subtly different connotation, Postmodern art.
+
+Modern and Contemporary[edit]
+Main articles: Modern art and Contemporary art
+
+Henri Matisse, 1905  06, Le bonheur de vivre, oil on canvas, 175 x 241 cm, Barnes Foundation
+The physical and rational certainties of the clockwork universe depicted by the 18th  century Enlightenment were shattered not only by new discoveries of relativity by Einstein[17] and of unseen psychology by Sigmund Freud,[18] but also by unprecedented technological development accelerated by the implosion of civilization in two world wars. The history of 20th  century art is a narrative of endless possibilities and the search for new standards, each being torn down in succession by the next. Thus the parameters of Impressionism, Expressionism, Fauvism, Cubism, Dadaism, Surrealism, and other art movements cannot be maintained as significant and culturally germane very much beyond the time of their invention. Increasing global interaction during this time saw an equivalent influence of other cultures into Western art, such as Pablo Picasso being influenced by Iberian sculpture, African sculpture and Primitivism. Japonism, and Japanese woodcuts (which had themselves been influenced by Western Renaissance draftsmanship) had an immense influence on Impressionism and subsequent artistic developments. The influential example set by Paul Gauguin's interest in Oceanic art and the sudden popularity among the cognoscenti in early 20th century Paris of newly discovered African fetish sculptures and other works from non  European cultures were taken up by Picasso, Henri Matisse, and by many of their colleagues.
+
+Modernism, in its response to the idealistic 19th century search for truth, and the century's progress in general, gave way in the latter decades of the 20th century to a realization of that idealism's unattainability. Rapid advances in science and technology were accepted as an unavoidable truth, which led to the late Modern and Postmodern period. In these periods, cultures of the world and of history are seen as changing forms, which can be appreciated and drawn from with occasional irony. Furthermore, the separation of cultures had become increasingly blurred and it has become more appropriate to think in terms of a global culture, rather than regional cultures.
+
+The Americas[edit]
+Main articles: Native American art, Painting in the Americas before Colonization and Pre  Columbian art
+The history of art in the Americas begins in pre  Columbian times with Indigenous cultures. Art historians have focused particularly closely on Mesoamerica during this early era, because a series of stratified cultures arose there that erected grand architecture and produced objects of fine workmanship that are comparable to the arts of western Europe. Among the widely read textbooks is one by Mary Ellen Miller titled The Art of Mesoamerica.
+
+Preclassic[edit]
+The art  making tradition of Mesoamerican people begins with the Olmec around 1400 BCE, during the Preclassic era. These people are best known for making colossal heads but also carved jade, erected monumental architecture, made small  scale sculpture, and designed mosaic floors. Two of the most well  studied sites artistically are San Lorenzo Tenochtitl n and La Venta. After the Olmec culture declined, the Maya civilization became prominent in the region. Sometimes a transitional Epi  Olmec period is described, which is a hybrid of Olmec and Maya. A particularly well  studied Epi  Olmec site is La Mojarra, which includes hieroglyphic carvings that have been partially deciphered.
+
+Classic[edit]
+By the Late pre  Classic era, beginning around 400 BCE, the Olmec culture had declined but both Central Mexican and Maya peoples were thriving. Throughout much of the Classic period in Central Mexico the city of Teotihuacan was thriving, as were Xochicalco and El Tajin. These sites boasted both grand sculpture and architecture. Other Central Mexican peoples included the Mixtecs, the Zapotecs, and people in the Valley of Oaxaca. Maya art was at its height during the “Classic” period a name that mirrors that of Classical European antiquity and which began around 200 CE. Major Maya sites from this era include Copan where numerous stelae were carved in the round, and Quirigua where the largest stelae of Mesoamerica are located along with zoomorphic altars. A complex writing system was developed, and Maya illuminated manuscripts were produced in large numbers on paper made from tree bark. Although Maya cities have existed to the present day, several sites ”collapsed” around 1000.
+
+Postclassic[edit]
+At the time of the Spanish conquest of Yucatn during the 16th and 17th centuries, the Maya were still powerful, but many communities were paying tribute to Aztec society. The latter culture was thriving, and it included arts such as sculpture, painting, and feather mosaic. Perhaps the most well  known work of Aztec art is the calendar stone, which has become a national symbol of the state of Mexico. During the Spanish conquest of the Aztec Empire many of these artistic objects were sent to Europe, where they were placed in cabinets of curiosities, and later redistributed to art museums. The Aztec empire was based in the city of Tenochtitlan which was largely destroyed during the colonial era. What remains of it was buried beneath Mexico City. A few buildings, such as the foundation of the Templo Mayor have since been unearthed by archaeologists, but they are in poor condition.
+
+Colonial[edit]
+Art in the Americas since the conquest has been a mixture of indigenous and foreign traditions, including European, African, and Asian settlers. Thus, books about the visual arts of the United States, such as Francis Pohl  s Framing America, start with the conquest and reconstruct manifold traditions. Numerous indigenous traditions thrived after the conquest. For example, the Plains Indians created quillwork, beadwork, winter counts, ledger art, and tipis in the pre  reservation era, and afterwards became assimilated into the world of Modern and Contemporary art through institutions such as the Santa Fe Indian School which encouraged students to develop a unique Native American style. Many paintings from that school, now called the Studio Style, were exhibited at the Philbrook Museum of Art during its Indian annual held from 1946 to 1979.
+
+Modern[edit]
+Intertwined with this story of indigenous art, are movements of painting, sculpture, and architecture such as the Hudson River School and the Ashcan School of the 19th century, and Pop Art and Abstract Expressionism of the 20th. Some of the most celebrated images were produced by artists of the American West, featuring “Cowboys and Indians,” and some of the most visually complex objects were created by African Americans.
+
+Western Asia[edit]
+Main articles: Ancient art, Art of Ancient Egypt, Art and architecture of Assyria, Persian art, Scythian art, Islamic art and Byzantine Art
+Religious Islamic art often forbids depictions of people, as they may be misused as idols. Religious ideas are thus often represented through geometric designs instead. However, there are many Islamic paintings which display religious themes and scenes of stories common among the three main monotheistic faiths of Islam, Christianity, and Judaism.
+
+Central/Southern/Eastern Asian[edit]
+
+The Great Wave off Kanagawa by Hokusai
+Main article: Eastern art history
+Eastern civilization broadly includes Asia, and it also includes a complex tradition of art making. One Eastern art history survey textbook is John Laplante  s Asian Art. It divides the field by nation, with units on India, China, and Japan.
+
+
+Fresco from Ajanta caves, c. 450  500
+Eastern art has generally worked in a style akin to Western medieval art, namely a concentration on surface patterning and local colour (meaning the plain colour of an object, such as basic red for a red robe, rather than the modulations of that colour brought about by light, shade and reflection). A characteristic of this style is that the local colour is often defined by an outline (a contemporary equivalent is the cartoon). This is evident in, for example, the art of India, Tibet and Japan.
+
+Africa[edit]
+
+One of many ancient Yoruba sculptures discovered at Ife
+See also: Egyptian art, Art of ancient Egypt, African folk art and African tribal masks
+The long story of African Art includes both high sculpture, perhaps typified by the brass castings of the Benin people, as well as folk art. In the ancient world, Egypt is often thought of as the greatest artistic culture of Africa, but it is also rivaled by Nubia, which was located in present  day Sudan. Concurrent with the European Middle Ages, in the eleventh century CE a nation that made grand architecture, gold sculpture, and intricate jewelry was founded in Great Zimbabwe. Impressive sculpture was concurrently being cast from brass by the Yoruba people of what is now Nigeria. Such a culture grew and was ultimately transformed to become the Benin Kingdom, where elegant altar tusks, brass heads, plaques of brass, and palatial architecture was created. The Benin Kingdom was ended by the British in 1897, and little of the historical art now remains in Nigeria. Today, the most significant arts venue in Africa is the Johannesburg Biennale.
+
+Oceania[edit]
+Main article: Art of Oceania
+The Art of Oceania includes the geographic areas of Micronesia, Polynesia, Australia, New Zealand, and Melanesia. Nicholas Thomas  s textbook Oceanic Art treats the area thematically, with essays on ancestry, warfare, the body, gender, trade, religion, and tourism. Unfortunately, little ancient art survives from Oceania. Scholars believe that this is likely because artists used perishable materials, such as wood and feathers, which did not survive in the tropical climate, and there are no historical records to refer to this most material. The understanding of Oceania's artistic cultures thus begins with the documentation of it by Westerners, such as Captain James Cook in the eighteenth century. At the turn of the twentieth century the French artist Paul Gauguin spent significant amounts of time in Tahiti, living with local people and making modern art a fact that has become intertwined with Tahitian visual culture to the present day. The indigenous art of Australia often looks like abstract modern art, but it has deep roots in local culture.
+
+Art museums[edit]
+
+The Guggenheim Museum in Bilbao, Spain
+The experience of art history, as conveyed by art museums, tends to be organized differently from that of textbooks due to the nature of collections and the institutions themselves. Rather than a full march through time, museums employ curators who assemble objects into exhibitions, often with unique commentary that is later reinterpreted by docents. Because they have the responsibility to store objects, museums develop taxonomies for their collections, using conventions of classification authority for the sake of consistency. This may be undertaken with the museum  s archivist. The result is to occasionally find a strong emphasis on the history of media in conjunction with the history of culture.
+
+Such an emphasis on media is a natural outgrowth of the internal classification systems used in art museums, which usually include departments of painting, sculpture, decorative arts, and works on paper. Painting itself includes several media, such as oil painting, Tempera painting, watercolor. Sculpture can be divided into carving and casting. The decorative arts are perhaps the most diverse, as they include: textiles and needlework, which includes weaving, lace, shibori, and other work with fabric; Murals, of which frescoes are one form; and objects of adornment such as silver, ceramics, lacquerware, stained glass, and furniture. Museums generally cannot collect full buildings, but they may acquire pieces of architectural ornamentation, which also fall under the decorative arts department. Works on paper includes printmaking, photography, and the book arts such as illuminated manuscripts. Museums may also include a department of applied arts, which includes objects of good design along with the graphic art, illustration, and other forms of commercial art.
+
+Art market[edit]
+The art market can also be used to understand what “counts” as part of art history. Art dealers and auctioneers organize material for distribution to collectors. Two of the largest, and oldest, art auction houses are Sotheby's and Christie's, and each hold frequent sales of great antiquities and art objects.
+
+In addition to upstanding practices, a black market exists for great art, which is closely tied to art theft and art forgery. No auction houses or dealers admit openly to participating in the black market because of its illegality, but expos s suggest widespread problems in the field. Because demand for art objects is high, and security in many parts of the world is low, a thriving trade in illicit antiquities acquired through looting also exists. Although the art community nearly universally condemns looting because it results in destruction of archeological sites, looted art paradoxically remains omnipresent. Warfare is correlated with such looting, as is demonstrated by the recent archaeological looting in Iraq.
+
+Nationalist art history[edit]
+Both the making of art, the academic history of art, and the history of art museums are closely intertwined with the rise of nationalism. Art created in the modern era, in fact, has often been an attempt to generate feelings of national superiority or love of one  s country. Russian art is an especially good example of this, as the Russian avant  garde and later Soviet art were attempts to define that country  s identity.
+
+Most art historians working today identify their specialty as the art of a particular culture and time period, and often such cultures are also nations. For example, someone might specialize in the 19th  century German or contemporary Chinese art history. A focus on nationhood has deep roots in the discipline. Indeed, Vasari's Lives of the Artists is an attempt to show the superiority of Florentine artistic culture, and Heinrich W lfflin's writings (especially his monograph on Albrecht D rer) attempt to distinguish Italian from German styles of art.
+
+Many of the largest and most well  funded art museums of the world, such as the Louvre, the Victoria and Albert Museum, and the National Gallery of Art in Washington are state  owned. Most countries, indeed have a national gallery, with an explicit mission of preserving the cultural patrimony owned by the government regardless of what cultures created the art and an often implicit mission to bolster that country  s own cultural heritage. The National Gallery of Art thus showcases art made in the United States, but also owns objects from across the world.
+
+Academic art history[edit]
+
+Laoco n and his Sons, Greek, (Late Hellenistic), c. 160 BCE and 20 BCE, White marble, Vatican Museum
+The study of the history of art is a relatively recent phenomenon; prior to the Renaissance, the modern concept of "art" did not exist. Over time, art historians have changed their views about what art is worthy of scrutiny. For example, during the early Victorian era, the 15th  century Italian artists were considered inferior to those of 16th  century High Renaissance. Such a notion was challenged by the Pre  Raphaelite movement. There has since been a trend, dominant in art history of the 21st century, to treat all cultures and periods neutrally. Thus, Australian Aboriginal art would not be deemed better or worse than Renaissance art it is just different. Art historical analysis has also evolved into studying the social and political use of art, rather than focusing solely on the aesthetic appreciation of its craftsmanship (beauty). What may once have been viewed simply as a masterpiece is now understood as an economic, social, philosophical, and cultural manifestation of the artist's world  view, philosophy, intentions and background.
