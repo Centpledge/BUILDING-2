@@ -19,7 +19,7 @@ testCase().testMod(s.sentiment("aesthetic social public   "),"art")#OK
 testCase().testMod(s.sentiment("integrated  less useful   "),"comSc") #OK
 testCase().testMod(s.sentiment("logical single short  "),"comSc") #OK
 testCase().testMod(s.sentiment("traditional able "),"art")#OK
-testCase().testMod(s.sentiment("traditional able "),"comSc")#ERROR
+testCase().testMod(s.sentiment("traditional able "),"comSc")#ERROR 
 testCase().testMod(s.sentiment("great  further "),"art")#OK
 testCase().testMod(s.sentiment("great  further "),"comSc")#ERROR
 testCase().testMod(s.sentiment(" notable material same required  "),"comSc") # 3.6 3.6 3.8 3.8
@@ -33,5 +33,5 @@ testCase().testMod(s.sentiment("mechanical latter twentieth "),"comSc") # 15.8 6
 testCase().testMod(s.sentiment("complete traditional controversial "),"comSc")# 11.9 3.6 3.6 ERROR
 testCase().testMod(s.sentiment("special material less"),"comSc")#  OK
 testCase().testMod(s.sentiment("integrated less great "),"comSc") #OK
-testCase().testMod(s.sentiment("art logical single short    "),"comSc") # ERROR 1art 3comSc
+testCase().testMod(s.sentiment("art logical single short    "),"comSc") # ERROR 1 art 3comSc
 testCase().testMod(s.sentiment("art logical single short same    "),"comSc") # OK 1art 4comSc
