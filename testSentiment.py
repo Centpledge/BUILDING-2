@@ -11,7 +11,7 @@ a =(s.sentiment("computer science complete "))
 ##print(s.sentiment("Drawing is a means of making an image, using any of a wide variety of tools and techniques. "))
 ##print a
 
-
+s.showWord()
 
 class testType(unittest.TestCase):
     def test_art(self):
@@ -20,3 +20,4 @@ class testType(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
