@@ -27,7 +27,7 @@ class Example(Frame):
 
     def onOpen(self):
 
-        ftypes = [('Python files', '*.py'), ('All files', '*')]
+        ftypes = [('Text File', '*.txt'), ('All files', '*')]
         dlg = tkFileDialog.Open(self, filetypes = ftypes)
         fl = dlg.show()
 
