@@ -5,11 +5,11 @@ from matplotlib.figure import Figure
 import matplotlib.animation as animation
 from matplotlib import style
 import Tkinter as tk
+import tkFileDialog
 from Tkinter import *
 import ttk
 import csv
 import sentiment_mod as s
-from Tkinter import *
 from ttk import *
 from PIL import ImageTk ,Image
 import tkMessageBox
@@ -155,7 +155,9 @@ class enterInput(tk.Frame):  ### program window
                             command=self.showWcComSc)
         button6.pack()
         sp2 = Label(self, text="Histogram ")
-    
+        button7 = tk.Button(self, text="OPEN FILE",width = 30,
+                            command=self.chooseFile)
+        button7.pack()
         sp2.pack(pady = 10)
         plotW = tk.Button(self, text="All word",width = 30, command=self.plotG)
         plotW.pack()
@@ -304,7 +306,16 @@ class enterInput(tk.Frame):  ### program window
             getLink.pop()   ## if not deletd last index
             print "Lastest link deleted current link in list : "
             print getLink
-
+    def chooseFile(self):
+        
+        filez = tkFileDialog.askopenfilenames()
+        splitFilez = self.tk.splitlist(filez)
+        for item in splitFilez :
+            openIt = open(item,'r')
+            file_contents = openIt.read()
+            print file_contents
+            openIt.close()
+        
     def submitLink(self):   ### PRESS SUBMIT
     
             
