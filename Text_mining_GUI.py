@@ -47,6 +47,7 @@ artWord = []
 comScWord = []
 PArt = []
 PComSc = []
+loadT = []
 wordCollect = ["Empty"]
 ent = ""
 notCount= ["a","is","the","for","and",';',':','(',')','[',']','{','{','}','is','am','are',
@@ -136,6 +137,9 @@ class enterInput(tk.Frame):  ### program window
         ent.pack(pady=2,padx=10)
         all_entries.append( ent )
         subbutton.pack(pady = 25)
+        button7 = tk.Button(self, text="OPEN FILE",width = 30,
+                            command=self.chooseFile)
+        button7.pack()
         popbutton.pack()
         delbutton.pack()
         sp1 = Label(self, text="Word Cloud")
@@ -155,9 +159,7 @@ class enterInput(tk.Frame):  ### program window
                             command=self.showWcComSc)
         button6.pack()
         sp2 = Label(self, text="Histogram ")
-        button7 = tk.Button(self, text="OPEN FILE",width = 30,
-                            command=self.chooseFile)
-        button7.pack()
+        
         sp2.pack(pady = 10)
         plotW = tk.Button(self, text="All word",width = 30, command=self.plotG)
         plotW.pack()
@@ -251,7 +253,7 @@ class enterInput(tk.Frame):  ### program window
         global ent
 
         for number, ent in enumerate(all_entries):
-            if len(ent.get()) == 0:
+            if len(ent.get()) == 0 and loadT ==[]:
                     print "this entry is  empty"    ## check if entry is empty or not
                 
                    
@@ -314,6 +316,7 @@ class enterInput(tk.Frame):  ### program window
             openIt = open(item,'r')
             file_contents = openIt.read()
             print file_contents
+            loadT.append(file_contents)
             openIt.close()
         
     def submitLink(self):   ### PRESS SUBMIT
@@ -326,6 +329,12 @@ class enterInput(tk.Frame):  ### program window
                         soup = BeautifulSoup(r.content,"lxml")
                         g_data =soup.find_all("p")
                         foundSymbol = 0
+                        for a in loadT :
+                            for b in word_tokenize(a.text):
+                                listWord.append(b)
+                            for b in sent_tokenize(a.text):
+                                sentence.append(b)
+                            
                         for a in g_data :
                         
                             for b in word_tokenize(a.text):
