@@ -48,6 +48,7 @@ comScWord = []
 PArt = []
 PComSc = []
 loadT = []
+loadTr= []
 wordCollect = ["Empty"]
 ent = ""
 notCount= ["a","is","the","for","and",';',':','(',')','[',']','{','{','}','is','am','are',
@@ -169,6 +170,9 @@ class enterInput(tk.Frame):  ### program window
         plotWComSc = tk.Button(self, text="Computer Science word",width = 30, command=self.plotGComSc)
         plotWComSc.pack()
         button1.pack(pady = 40)
+        button8 = tk.Button(self, text="submit load",width = 30,
+                            command=self.submitLoad)
+        button8.pack()
         
     def plotG(self): ## plot histogram all word
         c = Counter(wordCollect)
@@ -187,46 +191,55 @@ class enterInput(tk.Frame):  ### program window
         plt.show()
 
     def plotGArt(self): ## plot histogram art
-        c = Counter(PArt)
-        print c.most_common(10)
+        try :
+            c = Counter(PArt)
+            print c.most_common(10)
 
-        labels,values = zip(*c.most_common(10))
+            labels,values = zip(*c.most_common(10))
 
-        indexes = np.arange(len(labels))
-        width = 1
-        plt.bar(indexes,values,width)
-        plt.xticks(indexes + width * 0.5,labels)
-        plt.title("Frequency of Words")
-        plt.grid(True)
-        plt.xlabel("Words")
-        plt.ylabel("Frequency")
-        plt.show()
+            indexes = np.arange(len(labels))
+            width = 1
+            plt.bar(indexes,values,width)
+            plt.xticks(indexes + width * 0.5,labels)
+            plt.title("Frequency of Words")
+            plt.grid(True)
+            plt.xlabel("Words")
+            plt.ylabel("Frequency")
+            plt.show()
+        except :
+            print "Empty"
     def plotGComSc(self): ## plot histogram comSc
-        c = Counter(PComSc)
-        print c.most_common(10)
+        try :
+            c = Counter(PComSc)
+            print c.most_common(10)
 
-        labels,values = zip(*c.most_common(10))
+            labels,values = zip(*c.most_common(10))
 
-        indexes = np.arange(len(labels))
-        width = 1
-        plt.bar(indexes,values,width)
-        plt.xticks(indexes + width * 0.5,labels)
-        plt.title("Frequency of Words")
-        plt.grid(True)
-        plt.xlabel("Words")
-        plt.ylabel("Frequency")
-        plt.show()
+            indexes = np.arange(len(labels))
+            width = 1
+            plt.bar(indexes,values,width)
+            plt.xticks(indexes + width * 0.5,labels)
+            plt.title("Frequency of Words")
+            plt.grid(True)
+            plt.xlabel("Words")
+            plt.ylabel("Frequency")
+            plt.show()
+        except:
+            print "Empty"
     def showWc(self):   ## All word wordcloud
-        a = ' '.join(wordCollect)       
-        wordcloud = WordCloud(max_font_size=40, relative_scaling=.5).generate(a)
-        plt.imshow(wordcloud)
-        plt.axis("off")
-        plt.show()
-        imgWidth = 600
-        imgHeight = 250
-        xPoint = 0
-        yPoint = 0
-        num = 0
+        try :
+            a = ' '.join(wordCollect)       
+            wordcloud = WordCloud(max_font_size=40, relative_scaling=.5).generate(a)
+            plt.imshow(wordcloud)
+            plt.axis("off")
+            plt.show()
+            imgWidth = 600
+            imgHeight = 250
+            xPoint = 0
+            yPoint = 0
+            num = 0
+        except :
+            print "Empty"
     def showWcArt(self):  ## Art wordcloud
         a = ' '.join(artWord)       
         wordcloud = WordCloud(max_font_size=40, relative_scaling=.5).generate(a)
@@ -315,12 +328,92 @@ class enterInput(tk.Frame):  ### program window
         for item in splitFilez :
             openIt = open(item,'r')
             file_contents = openIt.read()
-            print file_contents
-            
-                
             loadT.append(file_contents)
             openIt.close()
-        print loadT.rstrip()
+        a = ''.join(loadT)
+        b =  a.rstrip()
+        for word in word_tokenize(b):
+            loadTr.append(word)
+        print loadTr
+    def submitLoad(self):
+        foundSymbol = 0
+        for a in loadTr :
+            for b in word_tokenize(a):
+                listWord.append(b)
+            for b in sent_tokenize(a):
+                sentence.append(b)
+            
+
+
+        for a in listWord:
+            stemmedList.append(ps.stem(a))
+
+
+        for a in stemmedList : 
+            for b in notCount :
+                if a==b:
+                    foundSymbol = 1
+            if foundSymbol !=1:      
+                filteredList.append(a)
+
+                foundSymbol = 0
+            foundSymbol = 0
+
+        for a in filteredList :
+            lower.append(a.lower())
+            wordCollect.append(a.lower())
+        
+        a = ' '.join(listWord)
+        b = ' '
+
+  
+        savedWord = []
+        wordFreq = []
+        
+
+        c = Counter(lower)
+
+
+        del listWord[:]
+        del newListWord[:]                   
+        del stemmedList[:]
+        del lower[:]
+        del uniToStr[:]
+        del savedWord[:]
+        del wordFreq[:]
+        artCount = 0
+        comScCount = 0
+        for a in sentence :
+            if (s.sentiment(a))=="art" : ## check type for each sentence
+                artCount = artCount +1
+            else :
+                comScCount = comScCount +1
+
+        allType = artCount + comScCount  ## calculate all word numbers
+        artPercent = float((float(artCount)/float(allType)))*100
+        comScPercent = float((float(comScCount)/float(allType)))*100
+        
+        if artPercent > comScPercent : 
+            typeText = "ART"        ## if number of art sentence > com then it's ART
+            for word in sentence :
+                artWord.append(word)
+            for a in filteredList :
+                PArt.append(a.lower())
+        else :
+            typeText = "COMPUTER SCIENCE" ## if not its COM
+            for word in sentence :
+                comScWord.append(word)
+            for a in filteredList :
+                PComSc.append(a.lower())
+    
+        
+        
+     
+        del sentence[:]
+        del filteredList[:]
+
+
+
         
     def submitLink(self):   ### PRESS SUBMIT
     
@@ -332,7 +425,7 @@ class enterInput(tk.Frame):  ### program window
                         soup = BeautifulSoup(r.content,"lxml")
                         g_data =soup.find_all("p")
                         foundSymbol = 0
-                        for a in loadT :
+                        for a in loadTr :
                             for b in word_tokenize(a.text):
                                 listWord.append(b)
                             for b in sent_tokenize(a.text):
