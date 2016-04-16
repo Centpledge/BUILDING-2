@@ -45,10 +45,12 @@ sentence = []
 typeList = []
 artWord = []
 comScWord = []
+wordFreq = []
 PArt = []
 PComSc = []
 loadT = []
 loadTr= []
+savedWord = []
 wordCollect = ["Empty"]
 ent = ""
 notCount= ["a","is","the","for","and",';',':','(',')','[',']','{','{','}','is','am','are',
@@ -66,6 +68,12 @@ style.use("ggplot")
 f = Figure(figsize=(5,5), dpi=100)
 a = f.add_subplot(111)
 
+class testCase():
+    def checkOutput(self,output,result) :
+        if output != result :
+            return False
+        else :
+            return True
 
     
 class SeaofBTCapp(tk.Tk):
@@ -173,6 +181,13 @@ class enterInput(tk.Frame):  ### program window
         button8 = tk.Button(self, text="submit load",width = 30,
                             command=self.submitLoad)
         button8.pack()
+        button9 = tk.Button(self, text="testcase",width = 30,
+                            command=self.checkCase)
+        button9.pack()
+    def checkCase(self,output,result):
+        print testCase().checkOutput(output,result)
+        
+        
         
     def plotG(self): ## plot histogram all word
         c = Counter(wordCollect)
@@ -314,13 +329,16 @@ class enterInput(tk.Frame):  ### program window
         del wcText[:]
         artCount = 0
         comScCount = 0
+        self.checkCase(getLink,[])
     def delLastList(self):     ### delete last index
         if len(getLink) == 0:
             print "EMPTY"
+            print self.checkCase(getLink,[])
         else:
             getLink.pop()   ## if not deletd last index
             print "Lastest link deleted current link in list : "
             print getLink
+        
     def chooseFile(self):
         
         filez = tkFileDialog.askopenfilenames()
