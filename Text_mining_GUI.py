@@ -316,8 +316,11 @@ class enterInput(tk.Frame):  ### program window
             openIt = open(item,'r')
             file_contents = openIt.read()
             print file_contents
+            
+                
             loadT.append(file_contents)
             openIt.close()
+        print loadT.rstrip()
         
     def submitLink(self):   ### PRESS SUBMIT
     
