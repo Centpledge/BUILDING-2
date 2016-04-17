@@ -1,0 +1,5 @@
+Blaise Pascal designed and constructed the first working mechanical calculator, Pascal's calculator, in 1642.[2] In 1673, Gottfried Leibniz demonstrated a digital 
+mechanical calculator, called the Stepped Reckoner.[3] He may be considered the first computer scientist and information theorist, for, among other reasons, documenting 
+the binary number system. In 1820, Thomas de Colmar launched the mechanical calculator industry[note 1] when he released his simplified arithmometer, which was the 
+first calculating machine strong enough and reliable enough to be used daily in an office environment. Charles Babbage started the design of the first automatic 
+Computer A computer is a general purpose device that can be programmed to carry out a set of arithmetic or logical operations automatically. Since a sequence of operations can be readily changed, the computer can solve more than one kind of problem.

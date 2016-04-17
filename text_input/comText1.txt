@@ -1,0 +1,5 @@
+Computer science is the scientific and practical approach to computation and its applications. It is the systematic study of the feasibility, structure, expression, and 
+mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to 
+information. An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. A computer scientist specializes in the 
+theory of computation and the design of computational systems.[1]
+Its fields can be divided into a variety of theoretical and practical disciplines. Some fields, such as computational complexity theory (which explores the fundamental 
