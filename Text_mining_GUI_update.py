@@ -431,8 +431,23 @@ class enterInput(tk.Frame):  ### program window
         del sentence[:]
         del filteredList[:]
 
-
-
+    def pullText(self,link):
+        r = request.get(link)
+        r.content
+        soup = BeautifulSoup(r.content,"lxml")
+        g_data =soup.find_all("p")
+        return g_data
+    
+    def wordToken(self,sentence):
+        for item in sentence :
+            for a in word_tokenize(item.text):
+                return a
+        
+    def sentToken(self,sentence):
+        for item in sentence :
+            for a in sent_tokenize(item.text):
+                return a
+    
         
     def submitLink(self):   ### PRESS SUBMIT
     
