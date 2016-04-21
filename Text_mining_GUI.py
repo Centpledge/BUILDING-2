@@ -134,7 +134,7 @@ class enterInput(tk.Frame):  ### program window
         tk.Frame.__init__(self, parent)
         label = tk.Label(self, text="Enter input", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
-        label2 = tk.Label(self, text="you can enter multiple links at the same time", font=LARGE_FONT)
+        label2 = tk.Label(self, text="you can enter both link and text file", font=LARGE_FONT)
         label2.pack(pady=10,padx=10)
         artCount = 0
         comScCount = 0
@@ -152,10 +152,17 @@ class enterInput(tk.Frame):  ### program window
         ent.pack(pady=2,padx=10)
         all_entries.append( ent )
 ##        subbutton.pack(pady = 25)
-        button7 = tk.Button(self, text="OPEN FILE",width = 30,
+        button10 = tk.Button(self, text="Enter Link",width = 30,
+                            command=self.enterLink)
+        button10.pack()
+        button7 = tk.Button(self, text="Select Text File",width = 30,
                             command=self.chooseFile)
+     
         button7.pack()
-        popbutton.pack()
+        button9 = tk.Button(self, text="Submit",width = 30,
+                            command=self.submitCheck)
+        button9.pack()
+##        popbutton.pack()
         delbutton.pack()
         sp1 = Label(self, text="Word Cloud")
     
@@ -184,15 +191,9 @@ class enterInput(tk.Frame):  ### program window
         plotWComSc = tk.Button(self, text="Computer Science word",width = 30, command=self.plotGComSc)
         plotWComSc.pack()
 ##        button1.pack(pady = 40)
-        button8 = tk.Button(self, text="submit load",width = 30,
-                            command=self.submitLoad)
-        button8.pack()
-        button9 = tk.Button(self, text="submit all",width = 30,
-                            command=self.submitCheck)
-        button9.pack()
-        button10 = tk.Button(self, text="enter link",width = 30,
-                            command=self.enterLink)
-        button10.pack()
+       
+        
+        
     def checkCase(self,output,result):
         print testCase().checkOutput(output,result)
         
@@ -217,7 +218,7 @@ class enterInput(tk.Frame):  ### program window
     def plotGArt(self): ## plot histogram art
         try :
             c = Counter(PArt)
-            print c.most_common(10)
+            
 
             labels,values = zip(*c.most_common(10))
 
@@ -313,8 +314,27 @@ class enterInput(tk.Frame):  ### program window
                     ent.delete(0, 'end')   ##
 ##                print getLink
         self.submitCheck()
-
+    def pullText(self,link):
+        r = requests.get(link)
+        r.content
+        soup = BeautifulSoup(r.content,"lxml")
+        g_data =soup.find_all("p")
+        return g_data
+    
+    def wordToken(self,sentence,listA):
         
+            for a in word_tokenize(sentence):
+                listA.append(a)
+        
+    def sentToken(self,sentence,listA):
+  
+            for a in sent_tokenize(sentence):
+                listA.append(a)
+                
+    def appendLower(self,sentence,listA):
+        for item in sentence:
+            listA.append(item.lower())
+            
     def enterLink(self):
         global ent
 
@@ -366,6 +386,8 @@ class enterInput(tk.Frame):  ### program window
         del PComSc[:]
         del sentence[:]
         del wcText[:]
+        del checkLink[:]
+        del checkLoad[:]
         artCount = 0
         comScCount = 0
         self.checkCase(getLink,[])
@@ -416,15 +438,20 @@ class enterInput(tk.Frame):  ### program window
         
         foundSymbol = 0
         for a in loadTr :
-            for b in word_tokenize(a):
-                listWord.append(b)
-            for b in sent_tokenize(a):
-                sentence.append(b)
+            self.wordToken(a,listWord)
+            print listWord
+##            for b in word_tokenize(a):
+##                listWord.append(b)
+            self.sentToken(a,sentence)
+            print sentence
+##            for b in sent_tokenize(a):
+##                sentence.append(b)
             
 
 
             for a in listWord:
                 stemmedList.append(ps.stem(a))
+    
 
 
             for a in stemmedList : 
@@ -437,9 +464,11 @@ class enterInput(tk.Frame):  ### program window
                     foundSymbol = 0
                 foundSymbol = 0
 
-            for a in filteredList :
-                lower.append(a.lower())
-                wordCollect.append(a.lower())
+##            for a in filteredList :
+##                lower.append(a.lower())
+##                wordCollect.append(a.lower())
+            self.appendLower(filteredList,lower)
+            self.appendLower(filteredList,wordCollect)
             
             a = ' '.join(listWord)
             b = ' '
@@ -498,10 +527,13 @@ class enterInput(tk.Frame):  ### program window
             
           
             for link in getLink:
-                        r = requests.get(link)
-                        r.content
-                        soup = BeautifulSoup(r.content,"lxml")
-                        g_data =soup.find_all("p")
+##                        r = requests.get(link)
+##                        r.content
+##                        soup = BeautifulSoup(r.content,"lxml")
+##                        g_data =soup.find_all("p")
+##                        
+
+                        g_data = self.pullText(link)
                         foundSymbol = 0
                       
                         for a in g_data :
