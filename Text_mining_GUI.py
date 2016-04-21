@@ -207,7 +207,15 @@ class enterInput(tk.Frame):  ### program window
 
         indexes = np.arange(len(labels))
         width = 1
-        plt.bar(indexes,values,width)
+        
+        a = plt.bar(indexes,values,width)
+        a[0].set_color('r')
+        a[1].set_color('orange')
+        a[2].set_color('y')
+        a[3].set_color('green')
+        a[4].set_color('lime')
+        a[5].set_color('cyan')
+        a[6].set_color('turquoise')
         plt.xticks(indexes + width * 0.5,labels)
         plt.title("Frequency of Words")
         plt.grid(True)
@@ -224,6 +232,14 @@ class enterInput(tk.Frame):  ### program window
 
             indexes = np.arange(len(labels))
             width = 1
+            a = plt.bar(indexes,values,width)
+            a[0].set_color('r')
+            a[1].set_color('orange')
+            a[2].set_color('y')
+            a[3].set_color('green')
+            a[4].set_color('lime')
+            a[5].set_color('cyan')
+            a[6].set_color('turquoise')
             plt.bar(indexes,values,width)
             plt.xticks(indexes + width * 0.5,labels)
             plt.title("Frequency of Words")
@@ -242,6 +258,14 @@ class enterInput(tk.Frame):  ### program window
 
             indexes = np.arange(len(labels))
             width = 1
+            b = plt.bar(indexes,values,width)
+            b[0].set_color('r')
+            b[1].set_color('orange')
+            b[2].set_color('y')
+            b[3].set_color('green')
+            b[4].set_color('lime')
+            b[5].set_color('cyan')
+            b[6].set_color('turquoise')
             plt.bar(indexes,values,width)
             plt.xticks(indexes + width * 0.5,labels)
             plt.title("Frequency of Words")
