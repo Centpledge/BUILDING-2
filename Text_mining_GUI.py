@@ -1,5 +1,6 @@
 import matplotlib
 matplotlib.use("TkAgg")
+from nose.tools import assert_equal, assert_greater, assert_true, assert_raises
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
 import matplotlib.animation as animation
@@ -8,6 +9,7 @@ import Tkinter as tk
 import tkFileDialog
 from Tkinter import *
 import ttk
+from random import Random
 import csv
 import sentiment_mod as s
 from ttk import *
@@ -15,6 +17,7 @@ from PIL import ImageTk ,Image
 import tkMessageBox
 from nltk.tokenize import sent_tokenize , word_tokenize
 from nltk.stem import PorterStemmer
+from nose.tools import assert_equal, assert_greater, assert_true, assert_raises
 import requests
 from bs4 import BeautifulSoup
 from collections import Counter
@@ -30,6 +33,7 @@ from PIL import ImageDraw
 import pickle
 ps = PorterStemmer()
 tupleList = []
+ccc = []
 all_entries = []
 getLink = []
 listWord = []
@@ -244,7 +248,7 @@ class enterInput(tk.Frame):  ### program window
     def showWc(self):   ## All word wordcloud
         try :
             a = ' '.join(wordCollect)       
-            wordcloud = WordCloud(max_font_size=40, relative_scaling=.5).generate(a)
+            wordcloud = WordCloud(min_font_size = 5,background_color = 'white',max_font_size=55, relative_scaling=0.2).generate(a)
             plt.imshow(wordcloud)
             plt.axis("off")
             plt.show()
@@ -256,19 +260,23 @@ class enterInput(tk.Frame):  ### program window
         except :
             print "Empty"
     def showWcArt(self):  ## Art wordcloud
-        a = ' '.join(artWord)       
-        wordcloud = WordCloud(max_font_size=40, relative_scaling=.5).generate(a)
-        plt.imshow(wordcloud)
-        plt.axis("off")
-        plt.show()
-        imgWidth = 600
-        imgHeight = 250
-        xPoint = 0
-        yPoint = 0
-        num = 0
+        try :
+            a = ' '.join(artWord)
+            wordcloud = WordCloud(min_font_size = 5,background_color = 'white',max_font_size=60, relative_scaling=0.2).generate(a)
+            plt.imshow(wordcloud)
+            plt.axis("off")
+            plt.show()
+            imgWidth = 600
+            imgHeight = 250
+            xPoint = 0
+            yPoint = 0
+            num = 0
+        except :
+            print "Empty"
     def showWcComSc(self):  ## Computer science wordcloud
+        
         c = ' '.join(comScWord)
-        wordcloud = WordCloud(max_font_size=40, relative_scaling=.5).generate(c)
+        wordcloud = WordCloud(min_font_size = 5,background_color = 'white',max_font_size=60, relative_scaling=0.2).generate(c)
         plt.imshow(wordcloud)
         plt.axis("off")
         plt.show()
