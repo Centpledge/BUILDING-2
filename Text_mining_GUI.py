@@ -34,6 +34,8 @@ import pickle
 ps = PorterStemmer()
 tupleList = []
 ccc = []
+checkLoad =[]
+checkLink = []
 all_entries = []
 getLink = []
 listWord = []
@@ -149,7 +151,7 @@ class enterInput(tk.Frame):  ### program window
         ent = Entry(self,width = 60)
         ent.pack(pady=2,padx=10)
         all_entries.append( ent )
-        subbutton.pack(pady = 25)
+##        subbutton.pack(pady = 25)
         button7 = tk.Button(self, text="OPEN FILE",width = 30,
                             command=self.chooseFile)
         button7.pack()
@@ -181,13 +183,16 @@ class enterInput(tk.Frame):  ### program window
         plotWArt.pack()
         plotWComSc = tk.Button(self, text="Computer Science word",width = 30, command=self.plotGComSc)
         plotWComSc.pack()
-        button1.pack(pady = 40)
+##        button1.pack(pady = 40)
         button8 = tk.Button(self, text="submit load",width = 30,
                             command=self.submitLoad)
         button8.pack()
-        button9 = tk.Button(self, text="testcase",width = 30,
-                            command=self.checkCase)
+        button9 = tk.Button(self, text="submit all",width = 30,
+                            command=self.submitCheck)
         button9.pack()
+        button10 = tk.Button(self, text="enter link",width = 30,
+                            command=self.enterLink)
+        button10.pack()
     def checkCase(self,output,result):
         print testCase().checkOutput(output,result)
         
@@ -289,14 +294,15 @@ class enterInput(tk.Frame):  ### program window
         global ent
 
         for number, ent in enumerate(all_entries):
-            if len(ent.get()) == 0 and loadT ==[]:
+            if len(ent.get()) == 0 and loadT ==[] and checkLoad ==[]:
                     print "this entry is  empty"    ## check if entry is empty or not
                 
-                   
+                 
             else:
                 allLinks = open("data_input/links.pickle","wb") ## if not empty then dump all links
                 pickle.dump(ent.get(), allLinks)
                 allLinks.close()
+                checkLink.append('b')
 
                 splitLink = ent.get().split() ## split each links
                 
@@ -306,7 +312,32 @@ class enterInput(tk.Frame):  ### program window
                     getLink.append(item)   ## append splited links in to getLink
                     ent.delete(0, 'end')   ##
 ##                print getLink
-        self.submitLink()
+        self.submitCheck()
+
+        
+    def enterLink(self):
+        global ent
+
+        for number, ent in enumerate(all_entries):
+            if len(ent.get()) == 0 and loadT ==[] and checkLoad ==[]:
+                    print "this entry is  empty"    ## check if entry is empty or not
+                
+                 
+            else:
+                allLinks = open("data_input/links.pickle","wb") ## if not empty then dump all links
+                pickle.dump(ent.get(), allLinks)
+                allLinks.close()
+                checkLink.append('b')
+
+                splitLink = ent.get().split() ## split each links
+                
+                print "ADD  " + ent.get()  ## print all added links
+##                print splitLink
+                for item in splitLink :
+                    getLink.append(item)   ## append splited links in to getLink
+                    ent.delete(0, 'end')   ##
+##                print getLink
+        checkLink.append('a')
     def printLink(self):     ## PRINT LINK
         if len(getLink) == 0: ## if link empty print EMPTY
             print "EMPTY"    
@@ -360,9 +391,29 @@ class enterInput(tk.Frame):  ### program window
         b =  a.rstrip()
         for word in word_tokenize(b):
             loadTr.append(word)
+            checkLoad.append('a')
         print splitFilez
 ##        print loadTr
+
+        
+    def submitCheck(self):
+        if checkLoad ==[] and checkLink ==[] :
+            print "Empty"
+        if checkLoad !=[] and checkLink ==[]:
+            self.submitLoad()
+        if checkLoad ==[] and checkLink !=[]:
+            self.submitLink()
+        if checkLoad !=[] and checkLink !=[] :
+            print "submit all"
+            self.submitAll()
+
+    def submitAll(self):
+        
+        self.submitLoad()
+        self.submitLink()
+        
     def submitLoad(self):
+        
         foundSymbol = 0
         for a in loadTr :
             for b in word_tokenize(a):
@@ -372,72 +423,72 @@ class enterInput(tk.Frame):  ### program window
             
 
 
-        for a in listWord:
-            stemmedList.append(ps.stem(a))
+            for a in listWord:
+                stemmedList.append(ps.stem(a))
 
 
-        for a in stemmedList : 
-            for b in notCount :
-                if a==b:
-                    foundSymbol = 1
-            if foundSymbol !=1:      
-                filteredList.append(a)
+            for a in stemmedList : 
+                for b in notCount :
+                    if a==b:
+                        foundSymbol = 1
+                if foundSymbol !=1:      
+                    filteredList.append(a)
 
+                    foundSymbol = 0
                 foundSymbol = 0
-            foundSymbol = 0
 
-        for a in filteredList :
-            lower.append(a.lower())
-            wordCollect.append(a.lower())
-        
-        a = ' '.join(listWord)
-        b = ' '
+            for a in filteredList :
+                lower.append(a.lower())
+                wordCollect.append(a.lower())
+            
+            a = ' '.join(listWord)
+            b = ' '
 
-  
-        savedWord = []
-        wordFreq = []
-        
+      
+            savedWord = []
+            wordFreq = []
+            
 
-        c = Counter(lower)
+            c = Counter(lower)
 
 
-        del listWord[:]
-        del newListWord[:]                   
-        del stemmedList[:]
-        del lower[:]
-        del uniToStr[:]
-        del savedWord[:]
-        del wordFreq[:]
-        artCount = 0
-        comScCount = 0
-        for a in sentence :
-            if (s.sentiment(a))=="art" : ## check type for each sentence
-                artCount = artCount +1
+            del listWord[:]
+            del newListWord[:]                   
+            del stemmedList[:]
+            del lower[:]
+            del uniToStr[:]
+            del savedWord[:]
+            del wordFreq[:]
+            artCount = 0
+            comScCount = 0
+            for a in sentence :
+                if (s.sentiment(a))=="art" : ## check type for each sentence
+                    artCount = artCount +1
+                else :
+                    comScCount = comScCount +1
+
+            allType = artCount + comScCount  ## calculate all word numbers
+            artPercent = float((float(artCount)/float(allType)))*100
+            comScPercent = float((float(comScCount)/float(allType)))*100
+            
+            if artPercent > comScPercent : 
+                typeText = "ART"        ## if number of art sentence > com then it's ART
+                for word in sentence :
+                    artWord.append(word)
+                for a in filteredList :
+                    PArt.append(a.lower())
             else :
-                comScCount = comScCount +1
-
-        allType = artCount + comScCount  ## calculate all word numbers
-        artPercent = float((float(artCount)/float(allType)))*100
-        comScPercent = float((float(comScCount)/float(allType)))*100
+                typeText = "COMPUTER SCIENCE" ## if not its COM
+                for word in sentence :
+                    comScWord.append(word)
+                for a in filteredList :
+                    PComSc.append(a.lower())
         
-        if artPercent > comScPercent : 
-            typeText = "ART"        ## if number of art sentence > com then it's ART
-            for word in sentence :
-                artWord.append(word)
-            for a in filteredList :
-                PArt.append(a.lower())
-        else :
-            typeText = "COMPUTER SCIENCE" ## if not its COM
-            for word in sentence :
-                comScWord.append(word)
-            for a in filteredList :
-                PComSc.append(a.lower())
-    
-        
-        
-     
-        del sentence[:]
-        del filteredList[:]
+            
+            
+         
+            del sentence[:]
+            del filteredList[:]
 
 
 
@@ -452,12 +503,7 @@ class enterInput(tk.Frame):  ### program window
                         soup = BeautifulSoup(r.content,"lxml")
                         g_data =soup.find_all("p")
                         foundSymbol = 0
-                        for a in loadTr :
-                            for b in word_tokenize(a.text):
-                                listWord.append(b)
-                            for b in sent_tokenize(a.text):
-                                sentence.append(b)
-                            
+                      
                         for a in g_data :
                         
                             for b in word_tokenize(a.text):
