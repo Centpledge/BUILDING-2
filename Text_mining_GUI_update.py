@@ -438,16 +438,18 @@ class enterInput(tk.Frame):  ### program window
         g_data =soup.find_all("p")
         return g_data
     
-    def wordToken(self,sentence):
+    def wordToken(self,sentence,listA):
         for item in sentence :
             for a in word_tokenize(item.text):
-                return a
+                listA.append(a)
         
-    def sentToken(self,sentence):
+    def sentToken(self,sentence,listA):
         for item in sentence :
             for a in sent_tokenize(item.text):
-                return a
-    
+                listA.append(a)
+    def appendLower(self,sentence,listA)
+        for item in sentence:
+            listA.append(item.lower())
         
     def submitLink(self):   ### PRESS SUBMIT
     

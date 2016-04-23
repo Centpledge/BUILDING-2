@@ -79,5 +79,7 @@ def sentiment(text):
 def showWord():
     classifier.show_most_informative_features(200)
 
+def acc():
+    print("Original Naive Bayes Algo accuracy percent:", (nltk.classify.accuracy(classifier, testing_set))*100)
 
 ##,voted_classifier.confidence(feats)

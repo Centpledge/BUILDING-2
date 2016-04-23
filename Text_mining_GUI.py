@@ -30,6 +30,11 @@ import PIL
 from PIL import ImageFont
 from PIL import Image
 from PIL import ImageDraw
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfpage import PDFPage
+from cStringIO import StringIO
 import pickle
 ps = PorterStemmer()
 tupleList = []
@@ -345,6 +350,30 @@ class enterInput(tk.Frame):  ### program window
         g_data =soup.find_all("p")
         return g_data
     
+    def pdfLoad(self,path):
+        rsrcmgr = PDFResourceManager()
+        retstr = StringIO()
+        codec = 'utf-8'
+        laparams = LAParams()
+        device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
+        fp = file(path, 'rb')
+        interpreter = PDFPageInterpreter(rsrcmgr, device)
+        password = ""
+        maxpages = 0
+        caching = True
+        pagenos=set()
+
+        for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password,caching=caching, check_extractable=True):
+            interpreter.process_page(page)
+
+        text = retstr.getvalue()
+
+        fp.close()
+        device.close()
+        retstr.close()
+        return text
+
+
     def wordToken(self,sentence,listA):
         
             for a in word_tokenize(sentence):
@@ -415,6 +444,7 @@ class enterInput(tk.Frame):  ### program window
         artCount = 0
         comScCount = 0
         self.checkCase(getLink,[])
+        
     def delLastList(self):     ### delete last index
         if len(getLink) == 0:
             print "EMPTY"
@@ -423,13 +453,26 @@ class enterInput(tk.Frame):  ### program window
             getLink.pop()   ## if not deletd last index
             print "Lastest link deleted current link in list : "
             print getLink
+            
+    def checkEnd(self,fileCh):
         
+        if fileCh.endswith('.txt'):
+            print '%s is a text' % fileCh
+            
+        elif fileCh.endswith('.html'):
+            print '%s its a html' % fileCh
+            
+        elif fileCh.endswith('.pdf'):
+            print'%s is a pdf' % fileCh
+            self.pdfLoad(fileCh)
+            
     def chooseFile(self):
         
         filez = tkFileDialog.askopenfilenames()
         splitFilez = self.tk.splitlist(filez)
         for item in splitFilez :
             openIt = open(item,'r')
+            self.checkEnd(item)
             file_contents = openIt.read()
             loadT.append(file_contents)
             openIt.close()
@@ -459,35 +502,26 @@ class enterInput(tk.Frame):  ### program window
         self.submitLink()
         
     def submitLoad(self):
-        
         foundSymbol = 0
         for a in loadTr :
             self.wordToken(a,listWord)
-            print listWord
+            
 ##            for b in word_tokenize(a):
 ##                listWord.append(b)
             self.sentToken(a,sentence)
-            print sentence
+            
 ##            for b in sent_tokenize(a):
 ##                sentence.append(b)
-            
-
-
             for a in listWord:
                 stemmedList.append(ps.stem(a))
-    
-
-
             for a in stemmedList : 
                 for b in notCount :
                     if a==b:
                         foundSymbol = 1
                 if foundSymbol !=1:      
                     filteredList.append(a)
-
                     foundSymbol = 0
                 foundSymbol = 0
-
 ##            for a in filteredList :
 ##                lower.append(a.lower())
 ##                wordCollect.append(a.lower())
@@ -496,14 +530,11 @@ class enterInput(tk.Frame):  ### program window
             
             a = ' '.join(listWord)
             b = ' '
-
       
             savedWord = []
             wordFreq = []
             
-
             c = Counter(lower)
-
 
             del listWord[:]
             del newListWord[:]                   
@@ -536,27 +567,18 @@ class enterInput(tk.Frame):  ### program window
                     comScWord.append(word)
                 for a in filteredList :
                     PComSc.append(a.lower())
-        
-            
-            
-         
+           
             del sentence[:]
             del filteredList[:]
-
-
-
         
     def submitLink(self):   ### PRESS SUBMIT
-    
-            
-          
+        
             for link in getLink:
 ##                        r = requests.get(link)
 ##                        r.content
 ##                        soup = BeautifulSoup(r.content,"lxml")
 ##                        g_data =soup.find_all("p")
 ##                        
-
                         g_data = self.pullText(link)
                         foundSymbol = 0
                       
@@ -566,7 +588,6 @@ class enterInput(tk.Frame):  ### program window
                                 listWord.append(b)
                             for b in sent_tokenize(a.text):
                                 sentence.append(b)
-
 
                         for a in listWord:
                             stemmedList.append(ps.stem(a))
@@ -588,15 +609,11 @@ class enterInput(tk.Frame):  ### program window
                         
                         a = ' '.join(listWord)
                         b = ' '
-
-                  
+                
                         savedWord = []
                         wordFreq = []
-                        
 
                         c = Counter(lower)
-
-
                         del listWord[:]
                         del newListWord[:]                   
                         del stemmedList[:]
@@ -629,14 +646,10 @@ class enterInput(tk.Frame):  ### program window
                             for a in filteredList :
                                 PComSc.append(a.lower())
                         typeList.append((link,typeText))
-                        
-                        
-                     
+                    
                         del sentence[:]
                         del filteredList[:]
-            
-          
-            
+
             save_typeList = open("data_input/typelist.pickle","wb")
             pickle.dump(typeList, save_typeList) ## save link and type to pickle for future usage
             save_typeList.close()
