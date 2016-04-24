@@ -1,5 +1,6 @@
 import matplotlib
 import codecs
+import time
 matplotlib.use("TkAgg")
 from nose.tools import assert_equal, assert_greater, assert_true, assert_raises
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
@@ -63,6 +64,7 @@ PArt = []
 PComSc = []
 loadT = []
 loadTr= []
+textB ='0'
 savedWord = []
 wordCollect = ["Empty"]
 ent = ""
@@ -120,7 +122,7 @@ class SeaofBTCapp(tk.Tk):
 
         
 class StartPage(tk.Frame):
-
+    
     def __init__(self, parent, controller):
         tk.Frame.__init__(self,parent)
         label = tk.Label(self, text="Welcome to Text mining program", font=LARGER_FONT)
@@ -136,13 +138,19 @@ class StartPage(tk.Frame):
 
 
 class enterInput(tk.Frame):  ### program window
-
+    pdfCount = 0
+    txtCount = 0
+    linkCount = 0
+    htmlCount = 0
+    artC = 0
+    comScC = 0
+    checkSubmit  = False
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text="Enter input", font=LARGE_FONT)
+        label = tk.Label(self, text="Enter Link", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
         label2 = tk.Label(self, text="you can enter both link and text file", font=LARGE_FONT)
-        label2.pack(pady=10,padx=10)
+##        label2.pack(pady=10,padx=10)
         artCount = 0
         comScCount = 0
        
@@ -152,30 +160,36 @@ class enterInput(tk.Frame):  ### program window
         popbutton = tk.Button(self, text="DELETE Lastest link",width = 30, command=self.delLastList)
 
  
-        ww = Label(self, text="After you entered all links click SUBMIT")
-    
-        ww.pack(pady=5)
+##        ww = Label(self, text="After you entered all links click SUBMIT")
+##    
+##        ww.pack(pady=5)
         ent = Entry(self,width = 60)
         ent.pack(pady=2,padx=10)
         all_entries.append( ent )
 ##        subbutton.pack(pady = 25)
-        button10 = tk.Button(self, text="Enter Link",width = 30,
+        sp7 = Label(self, text="")
+        sp7.pack()
+        button10 = tk.Button(self, text="Add Link",width = 30,
                             command=self.enterLink)
         button10.pack()
         button7 = tk.Button(self, text="Select Text File",width = 30,
                             command=self.chooseFile)
      
         button7.pack()
-        button9 = tk.Button(self, text="Submit",width = 30,
+        button9 = tk.Button(self, text="Submit and Run",width = 30,
                             command=self.submitCheck)
         button9.pack()
 ##        popbutton.pack()
         delbutton.pack()
         sp1 = Label(self, text="Word Cloud")
+
+   
+
+
     
         sp1.pack(pady = 10)
-        button1 = tk.Button(self, text="Back to Home",width = 45,height = 2,
-                         command=lambda: controller.show_frame(StartPage))
+##        button1 = tk.Button(self, text="Back to Home",width = 45,height = 2,
+##                         command=lambda: controller.show_frame(StartPage))
         
 
         button4 = tk.Button(self, text="All word cloud",width = 30,
@@ -197,9 +211,21 @@ class enterInput(tk.Frame):  ### program window
         plotWArt.pack()
         plotWComSc = tk.Button(self, text="Computer Science word",width = 30, command=self.plotGComSc)
         plotWComSc.pack()
+        sp3 = Label(self, text="")
+        sp3.pack()
 ##        button1.pack(pady = 40)
-       
+
+
+##        listbox2 = Listbox(self,width =50,height = 5)
+##        listbox2.pack()
         
+##        for i in range(10):
+##            listbox2.insert(END, str(i))
+##        listbox2.insert(END,"TEXT MINING")
+##        self.updateBox("TEXT MINING",listbox2)
+       
+    def updateBox(self,text,box):
+        return box.insert(END,text)
         
     def checkCase(self,output,result):
         print testCase().checkOutput(output,result)
@@ -259,7 +285,7 @@ class enterInput(tk.Frame):  ### program window
     def plotGComSc(self): ## plot histogram comSc
         try :
             c = Counter(PComSc)
-            print c.most_common(10)
+            
 
             labels,values = zip(*c.most_common(10))
 
@@ -285,7 +311,7 @@ class enterInput(tk.Frame):  ### program window
     def showWc(self):   ## All word wordcloud
         try :
             a = ' '.join(wordCollect)       
-            wordcloud = WordCloud(min_font_size = 5,background_color = 'white',max_font_size=55, relative_scaling=0.2).generate(a)
+            wordcloud = WordCloud(font_path='angsau.ttf' ,min_font_size = 7,background_color = 'white',max_font_size=55, relative_scaling=0.2).generate(a)
             plt.imshow(wordcloud)
             plt.axis("off")
             plt.show()
@@ -297,38 +323,47 @@ class enterInput(tk.Frame):  ### program window
         except :
             print "Empty"
     def showWcArt(self):  ## Art wordcloud
-        try :
-            a = ' '.join(artWord)
-            wordcloud = WordCloud(min_font_size = 5,background_color = 'white',max_font_size=60, relative_scaling=0.2).generate(a)
-            plt.imshow(wordcloud)
-            plt.axis("off")
-            plt.show()
-            imgWidth = 600
-            imgHeight = 250
-            xPoint = 0
-            yPoint = 0
-            num = 0
-        except :
-            print "Empty"
+        if artWord==[]:
+            pass
+        else :
+            try :
+                a = ' '.join(artWord)
+                wordcloud = WordCloud(font_path='angsau.ttf' ,min_font_size = 7,background_color = 'white',max_font_size=60, relative_scaling=0.2).generate(a)
+                plt.imshow(wordcloud)
+                plt.axis("off")
+                plt.show()
+                imgWidth = 600
+                imgHeight = 250
+                xPoint = 0
+                yPoint = 0
+                num = 0
+            except :
+                print "Empty"
     def showWcComSc(self):  ## Computer science wordcloud
-        
-        c = ' '.join(comScWord)
-        wordcloud = WordCloud(min_font_size = 5,background_color = 'white',max_font_size=60, relative_scaling=0.2).generate(c)
-        plt.imshow(wordcloud)
-        plt.axis("off")
-        plt.show()
-        imgWidth = 600
-        imgHeight = 250
-        xPoint = 0
-        yPoint = 0
-        num = 0
+        if comScWord ==[]:
+            pass
+        else :
+            try:
+                c = ' '.join(comScWord)
+                wordcloud = WordCloud(font_path='angsau.ttf' ,min_font_size = 7,background_color = 'white',max_font_size=60, relative_scaling=0.2).generate(c)
+                plt.imshow(wordcloud)
+                plt.axis("off")
+                plt.show()
+                imgWidth = 600
+                imgHeight = 250
+                xPoint = 0
+                yPoint = 0
+                num = 0
+            except:
+                "Empty"
     def func(self):
         global ent
 
         for number, ent in enumerate(all_entries):
             if len(ent.get()) == 0 and loadT ==[] and checkLoad ==[]:
-                    print "this entry is  empty"    ## check if entry is empty or not
-                
+                    
+                    print "this entry is  empty555"    ## check if entry is empty or not
+                    
                  
             else:
                 allLinks = open("data_input/links.pickle","wb") ## if not empty then dump all links
@@ -424,7 +459,15 @@ class enterInput(tk.Frame):  ### program window
         del checkLoad[:]
         artCount = 0
         comScCount = 0
+        enterInput.pdfCount = 0
+        enterInput.txtCount = 0
+        enterInput.linkCount = 0
+        enterInput.htmlCount = 0
+        enterInput.artC = 0
+        enterInput.comScC = 0
+        enterInput.checkSubmit  = False
         self.checkCase(getLink,[])
+        
         
     def delLastList(self):     ### delete last index
         if len(getLink) == 0:
@@ -438,35 +481,43 @@ class enterInput(tk.Frame):  ### program window
     def checkEnd(self,fileCh):
         
         if fileCh.endswith('.txt'):
-            print '%s is a text' % fileCh
+            
             return "txt"
         elif fileCh.endswith('.html'):
-            print '%s its a html' % fileCh
+            
             return "html"
         elif fileCh.endswith('.pdf'):
-            print'%s is a pdf' % fileCh
+            
             return "pdf"
             self.pdfLoad(fileCh)
             
     def chooseFile(self):
+       
         
         filez = tkFileDialog.askopenfilenames()
         splitFilez = self.tk.splitlist(filez)
         for item in splitFilez :
+            print "ADD %s" %item
             openIt = open(item,'r')
             allFile.append(item) #each file
 ##            self.checkEnd(item)
-            file_contents = openIt.read()
-            loadT.append(file_contents)
-            openIt.close()
-        a = ''.join(loadT)
-        b =  a.rstrip()
-        for word in word_tokenize(b):
-            loadTr.append(word)
-            checkLoad.append('a')
+##            file_contents = openIt.read()
+##            print file_contents
+##            loadT.append(file_contents)
+##            openIt.close()
+##        a = ''.join(loadT)
+##        b =  a.rstrip()
+##        for word in word_tokenize(b):
+##            try:
+##        loadTr.append(word)
+        checkLoad.append('a')
+##            except:
+##                pass
        
 
     def itsPDF(self,path):
+        enterInput.pdfCount += 1
+        foundSymbol = 0
         rsrcmgr = PDFResourceManager()
         retstr = StringIO()
         codec = 'utf-8'
@@ -549,11 +600,12 @@ class enterInput(tk.Frame):  ### program window
                 comScWord.append(word)
             for a in filteredList :
                 PComSc.append(a.lower())
-        typeList.append((link,typeText))
+        typeList.append((path,typeText))
     
         del sentence[:]
         del filteredList[:]
     def itsTXT(self,f) :
+        enterInput.txtCount += 1
         print 'txt'
         file_contents = f.read()
         loadT.append(file_contents)
@@ -629,22 +681,31 @@ class enterInput(tk.Frame):  ### program window
         del filteredList[:]
         
     def itsHTML(self,f):
-        print 'html'
+        
+        enterInput.htmlCount += 1
         foundSymbol = 1
         f=codecs.open(f, 'r')
         soup = BeautifulSoup(f,'html.parser')
-        print soup.get_text()
+        
         
         for b in word_tokenize(soup.get_text()):
-            listWord.append(b)
+            try:
+                listWord.append(b)
+            except:
+                pass
         for b in sent_tokenize(soup.get_text()):
-            sentence.append(b)
-
+            try:
+                sentence.append(b)
+            except:
+                pass
         for a in listWord:
-            stemmedList.append(ps.stem(a))
+            try:
+                stemmedList.append(ps.stem(a))
+            except:
+                pass
 
-
-        for a in stemmedList : 
+        for a in stemmedList :
+            
             for b in notCount :
                 if a==b:
                     foundSymbol = 1
@@ -709,14 +770,51 @@ class enterInput(tk.Frame):  ### program window
         if checkLoad ==[] and checkLink !=[]:
             self.submitLink()
         if checkLoad !=[] and checkLink !=[] :
-            print "submit all"
             self.submitAll()
-
+    def showResult(self):
+        if enterInput.checkSubmit ==False :
+            a= enterInput.linkCount + enterInput.pdfCount + enterInput.txtCount + enterInput.htmlCount
+            self.typeResult()
+            print "================================================================================"
+            print " "
+            print " "
+            print " "
+            print " "
+            print "                         ====================================="
+            print "                                  All document entered"
+            print "                         ====================================="
+            print "                                 %d      Link entered" %enterInput.linkCount
+            print "                                 %d      PDF  entered" %enterInput.pdfCount
+            print "                                 %d      TXT  entered" %enterInput.txtCount
+            print "                                 %d      HTML entered" %enterInput.htmlCount
+            print "                         ====================================="
+            print "                                         RESULT               "
+            print "                         ====================================="
+            print " "
+            print "                                 %d      ART document(s)       " %enterInput.artC
+            print "                                 %d      COMPUTER SCIENCE  document(s) " %enterInput.comScC
+            print " "
+            print " "
+            print " "
+            print " "
+            print "================================================================================"
+            print typeList
+            enterInput.checkSubmit =True
+    def typeResult(self):
+        for a,b in typeList:
+            if b =='ART':
+                enterInput.artC += 1
+                
+            else :
+                enterInput.comScC +=1
+                
     def submitAll(self):
-        
+        enterInput.checkSubmit =True
         self.submitLoad()
         self.submitLink()
-    
+        enterInput.checkSubmit =False
+        self.showResult()
+        
     def submitLoad(self):
         foundSymbol = 0
 ##        for a in allFile :
@@ -730,81 +828,11 @@ class enterInput(tk.Frame):  ### program window
                 self.itsTXT(item)
             elif self.checkEnd(item)=='html':
                 self.itsHTML(item)
-
-
-
-
-
-
-
-####            for b in word_tokenize(a):
-####                listWord.append(b)
-##            self.sentToken(a,sentence)
-##            
-####            for b in sent_tokenize(a):
-####                sentence.append(b)
-##            for a in listWord:
-##                stemmedList.append(ps.stem(a))
-##            for a in stemmedList : 
-##                for b in notCount :
-##                    if a==b:
-##                        foundSymbol = 1
-##                if foundSymbol !=1:      
-##                    filteredList.append(a)
-##                    foundSymbol = 0
-##                foundSymbol = 0
-####            for a in filteredList :
-####                lower.append(a.lower())
-####                wordCollect.append(a.lower())
-##            self.appendLower(filteredList,lower)
-##            self.appendLower(filteredList,wordCollect)
-##            
-##            a = ' '.join(listWord)
-##            b = ' '
-##      
-##            savedWord = []
-##            wordFreq = []
-##            
-##            c = Counter(lower)
-##
-##            del listWord[:]
-##            del newListWord[:]                   
-##            del stemmedList[:]
-##            del lower[:]
-##            del uniToStr[:]
-##            del savedWord[:]
-##            del wordFreq[:]
-##            artCount = 0
-##            comScCount = 0
-##            for a in sentence :
-##                if (s.sentiment(a))=="art" : ## check type for each sentence
-##                    artCount = artCount +1
-##                else :
-##                    comScCount = comScCount +1
-##
-##            allType = artCount + comScCount  ## calculate all word numbers
-##            artPercent = float((float(artCount)/float(allType)))*100
-##            comScPercent = float((float(comScCount)/float(allType)))*100
-##            
-##            if artPercent > comScPercent : 
-##                typeText = "ART"        ## if number of art sentence > com then it's ART
-##                for word in sentence :
-##                    artWord.append(word)
-##                for a in filteredList :
-##                    PArt.append(a.lower())
-##            else :
-##                typeText = "COMPUTER SCIENCE" ## if not its COM
-##                for word in sentence :
-##                    comScWord.append(word)
-##                for a in filteredList :
-##                    PComSc.append(a.lower())
-##           
-##            del sentence[:]
-##            del filteredList[:]
-        
+        self.showResult()
     def submitLink(self):   ### PRESS SUBMIT
-        
+            
             for link in getLink:
+                        enterInput.linkCount += 1
 ##                        r = requests.get(link)
 ##                        r.content
 ##                        soup = BeautifulSoup(r.content,"lxml")
@@ -880,10 +908,11 @@ class enterInput(tk.Frame):  ### program window
                     
                         del sentence[:]
                         del filteredList[:]
-
-            save_typeList = open("data_input/typelist.pickle","wb")
-            pickle.dump(typeList, save_typeList) ## save link and type to pickle for future usage
-            save_typeList.close()
+                
+##            save_typeList = open("data_input/typelist.pickle","wb")
+##            pickle.dump(typeList, save_typeList) ## save link and type to pickle for future usage
+##            save_typeList.close()
+            self.showResult()
 app = SeaofBTCapp()
 
 app.mainloop()
