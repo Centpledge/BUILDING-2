@@ -1,4 +1,5 @@
 import matplotlib
+import codecs
 matplotlib.use("TkAgg")
 from nose.tools import assert_equal, assert_greater, assert_true, assert_raises
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
@@ -463,9 +464,7 @@ class enterInput(tk.Frame):  ### program window
         for word in word_tokenize(b):
             loadTr.append(word)
             checkLoad.append('a')
-        print splitFilez #all file
-        print loadTr #word
-        print b
+       
 
     def itsPDF(self,path):
         rsrcmgr = PDFResourceManager()
@@ -628,8 +627,80 @@ class enterInput(tk.Frame):  ### program window
     
         del sentence[:]
         del filteredList[:]
-    def itsHTML(self):
+        
+    def itsHTML(self,f):
         print 'html'
+        foundSymbol = 1
+        f=codecs.open(f, 'r')
+        soup = BeautifulSoup(f,'html.parser')
+        print soup.get_text()
+        
+        for b in word_tokenize(soup.get_text()):
+            listWord.append(b)
+        for b in sent_tokenize(soup.get_text()):
+            sentence.append(b)
+
+        for a in listWord:
+            stemmedList.append(ps.stem(a))
+
+
+        for a in stemmedList : 
+            for b in notCount :
+                if a==b:
+                    foundSymbol = 1
+            if foundSymbol !=1:      
+                filteredList.append(a)
+
+                foundSymbol = 0
+            foundSymbol = 0
+
+        for a in filteredList :
+            lower.append(a.lower())
+            wordCollect.append(a.lower())
+        
+        a = ' '.join(listWord)
+        b = ' '
+
+        savedWord = []
+        wordFreq = []
+
+        c = Counter(lower)
+        del listWord[:]
+        del newListWord[:]                   
+        del stemmedList[:]
+        del lower[:]
+        del uniToStr[:]
+        del savedWord[:]
+        del wordFreq[:]
+        artCount = 0
+        comScCount = 0
+        for a in sentence :
+            if (s.sentiment(a))=="art" : ## check type for each sentence
+                artCount = artCount +1
+            else :
+                comScCount = comScCount +1
+
+        allType = artCount + comScCount  ## calculate all word numbers
+        artPercent = float((float(artCount)/float(allType)))*100
+        comScPercent = float((float(comScCount)/float(allType)))*100
+        
+        if artPercent > comScPercent : 
+            typeText = "ART"        ## if number of art sentence > com then it's ART
+            for word in sentence :
+                artWord.append(word)
+            for a in filteredList :
+                PArt.append(a.lower())
+        else :
+            typeText = "COMPUTER SCIENCE" ## if not its COM
+            for word in sentence :
+                comScWord.append(word)
+            for a in filteredList :
+                PComSc.append(a.lower())
+        typeList.append((f,typeText))
+    
+        del sentence[:]
+        del filteredList[:]
+        
     def submitCheck(self):
         if checkLoad ==[] and checkLink ==[] :
             print "Empty"
@@ -649,73 +720,87 @@ class enterInput(tk.Frame):  ### program window
     def submitLoad(self):
         foundSymbol = 0
 ##        for a in allFile :
-        for a in loadTr :
-            self.wordToken(a,listWord)
-            
-##            for b in word_tokenize(a):
-##                listWord.append(b)
-            self.sentToken(a,sentence)
-            
-##            for b in sent_tokenize(a):
-##                sentence.append(b)
-            for a in listWord:
-                stemmedList.append(ps.stem(a))
-            for a in stemmedList : 
-                for b in notCount :
-                    if a==b:
-                        foundSymbol = 1
-                if foundSymbol !=1:      
-                    filteredList.append(a)
-                    foundSymbol = 0
-                foundSymbol = 0
-##            for a in filteredList :
-##                lower.append(a.lower())
-##                wordCollect.append(a.lower())
-            self.appendLower(filteredList,lower)
-            self.appendLower(filteredList,wordCollect)
-            
-            a = ' '.join(listWord)
-            b = ' '
-      
-            savedWord = []
-            wordFreq = []
-            
-            c = Counter(lower)
+##        for a in loadTr :
+##            self.wordToken(a,listWord)
+##            
+        for item in allFile:
+            if self.checkEnd(item)=='pdf' :
+                self.itsPDF(item)
+            elif self.checkEnd(item)=='txt':
+                self.itsTXT(item)
+            elif self.checkEnd(item)=='html':
+                self.itsHTML(item)
 
-            del listWord[:]
-            del newListWord[:]                   
-            del stemmedList[:]
-            del lower[:]
-            del uniToStr[:]
-            del savedWord[:]
-            del wordFreq[:]
-            artCount = 0
-            comScCount = 0
-            for a in sentence :
-                if (s.sentiment(a))=="art" : ## check type for each sentence
-                    artCount = artCount +1
-                else :
-                    comScCount = comScCount +1
 
-            allType = artCount + comScCount  ## calculate all word numbers
-            artPercent = float((float(artCount)/float(allType)))*100
-            comScPercent = float((float(comScCount)/float(allType)))*100
-            
-            if artPercent > comScPercent : 
-                typeText = "ART"        ## if number of art sentence > com then it's ART
-                for word in sentence :
-                    artWord.append(word)
-                for a in filteredList :
-                    PArt.append(a.lower())
-            else :
-                typeText = "COMPUTER SCIENCE" ## if not its COM
-                for word in sentence :
-                    comScWord.append(word)
-                for a in filteredList :
-                    PComSc.append(a.lower())
-           
-            del sentence[:]
-            del filteredList[:]
+
+
+
+
+
+####            for b in word_tokenize(a):
+####                listWord.append(b)
+##            self.sentToken(a,sentence)
+##            
+####            for b in sent_tokenize(a):
+####                sentence.append(b)
+##            for a in listWord:
+##                stemmedList.append(ps.stem(a))
+##            for a in stemmedList : 
+##                for b in notCount :
+##                    if a==b:
+##                        foundSymbol = 1
+##                if foundSymbol !=1:      
+##                    filteredList.append(a)
+##                    foundSymbol = 0
+##                foundSymbol = 0
+####            for a in filteredList :
+####                lower.append(a.lower())
+####                wordCollect.append(a.lower())
+##            self.appendLower(filteredList,lower)
+##            self.appendLower(filteredList,wordCollect)
+##            
+##            a = ' '.join(listWord)
+##            b = ' '
+##      
+##            savedWord = []
+##            wordFreq = []
+##            
+##            c = Counter(lower)
+##
+##            del listWord[:]
+##            del newListWord[:]                   
+##            del stemmedList[:]
+##            del lower[:]
+##            del uniToStr[:]
+##            del savedWord[:]
+##            del wordFreq[:]
+##            artCount = 0
+##            comScCount = 0
+##            for a in sentence :
+##                if (s.sentiment(a))=="art" : ## check type for each sentence
+##                    artCount = artCount +1
+##                else :
+##                    comScCount = comScCount +1
+##
+##            allType = artCount + comScCount  ## calculate all word numbers
+##            artPercent = float((float(artCount)/float(allType)))*100
+##            comScPercent = float((float(comScCount)/float(allType)))*100
+##            
+##            if artPercent > comScPercent : 
+##                typeText = "ART"        ## if number of art sentence > com then it's ART
+##                for word in sentence :
+##                    artWord.append(word)
+##                for a in filteredList :
+##                    PArt.append(a.lower())
+##            else :
+##                typeText = "COMPUTER SCIENCE" ## if not its COM
+##                for word in sentence :
+##                    comScWord.append(word)
+##                for a in filteredList :
+##                    PComSc.append(a.lower())
+##           
+##            del sentence[:]
+##            del filteredList[:]
         
     def submitLink(self):   ### PRESS SUBMIT
         
