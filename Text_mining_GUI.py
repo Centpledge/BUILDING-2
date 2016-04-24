@@ -46,6 +46,7 @@ getLink = []
 listWord = []
 newListWord =[]
 filteredList = []
+allFile =[]
 f = filteredList
 stemmedList = []
 lower = []
@@ -350,28 +351,7 @@ class enterInput(tk.Frame):  ### program window
         g_data =soup.find_all("p")
         return g_data
     
-    def pdfLoad(self,path):
-        rsrcmgr = PDFResourceManager()
-        retstr = StringIO()
-        codec = 'utf-8'
-        laparams = LAParams()
-        device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
-        fp = file(path, 'rb')
-        interpreter = PDFPageInterpreter(rsrcmgr, device)
-        password = ""
-        maxpages = 0
-        caching = True
-        pagenos=set()
-
-        for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password,caching=caching, check_extractable=True):
-            interpreter.process_page(page)
-
-        text = retstr.getvalue()
-
-        fp.close()
-        device.close()
-        retstr.close()
-        return text
+    
 
 
     def wordToken(self,sentence,listA):
@@ -458,12 +438,13 @@ class enterInput(tk.Frame):  ### program window
         
         if fileCh.endswith('.txt'):
             print '%s is a text' % fileCh
-            
+            return "txt"
         elif fileCh.endswith('.html'):
             print '%s its a html' % fileCh
-            
+            return "html"
         elif fileCh.endswith('.pdf'):
             print'%s is a pdf' % fileCh
+            return "pdf"
             self.pdfLoad(fileCh)
             
     def chooseFile(self):
@@ -472,7 +453,8 @@ class enterInput(tk.Frame):  ### program window
         splitFilez = self.tk.splitlist(filez)
         for item in splitFilez :
             openIt = open(item,'r')
-            self.checkEnd(item)
+            allFile.append(item) #each file
+##            self.checkEnd(item)
             file_contents = openIt.read()
             loadT.append(file_contents)
             openIt.close()
@@ -481,10 +463,173 @@ class enterInput(tk.Frame):  ### program window
         for word in word_tokenize(b):
             loadTr.append(word)
             checkLoad.append('a')
-        print splitFilez
-##        print loadTr
+        print splitFilez #all file
+        print loadTr #word
+        print b
 
+    def itsPDF(self,path):
+        rsrcmgr = PDFResourceManager()
+        retstr = StringIO()
+        codec = 'utf-8'
+        laparams = LAParams()
+        device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
+        fp = file(path, 'rb')
+        interpreter = PDFPageInterpreter(rsrcmgr, device)
+        password = ""
+        maxpages = 0
+        caching = True
+        pagenos=set()
+
+        for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password,caching=caching, check_extractable=True):
+            interpreter.process_page(page)
+
+        text = retstr.getvalue()
+
+        fp.close()
+        device.close()
+        retstr.close()
         
+        for b in word_tokenize(text):
+            listWord.append(b)
+        for b in sent_tokenize(text):
+            sentence.append(b)
+
+        for a in listWord:
+            stemmedList.append(ps.stem(a))
+
+
+        for a in stemmedList : 
+            for b in notCount :
+                if a==b:
+                    foundSymbol = 1
+            if foundSymbol !=1:      
+                filteredList.append(a)
+
+                foundSymbol = 0
+            foundSymbol = 0
+
+        for a in filteredList :
+            lower.append(a.lower())
+            wordCollect.append(a.lower())
+        
+        a = ' '.join(listWord)
+        b = ' '
+
+        savedWord = []
+        wordFreq = []
+
+        c = Counter(lower)
+        del listWord[:]
+        del newListWord[:]                   
+        del stemmedList[:]
+        del lower[:]
+        del uniToStr[:]
+        del savedWord[:]
+        del wordFreq[:]
+        artCount = 0
+        comScCount = 0
+        for a in sentence :
+            if (s.sentiment(a))=="art" : ## check type for each sentence
+                artCount = artCount +1
+            else :
+                comScCount = comScCount +1
+
+        allType = artCount + comScCount  ## calculate all word numbers
+        artPercent = float((float(artCount)/float(allType)))*100
+        comScPercent = float((float(comScCount)/float(allType)))*100
+        
+        if artPercent > comScPercent : 
+            typeText = "ART"        ## if number of art sentence > com then it's ART
+            for word in sentence :
+                artWord.append(word)
+            for a in filteredList :
+                PArt.append(a.lower())
+        else :
+            typeText = "COMPUTER SCIENCE" ## if not its COM
+            for word in sentence :
+                comScWord.append(word)
+            for a in filteredList :
+                PComSc.append(a.lower())
+        typeList.append((link,typeText))
+    
+        del sentence[:]
+        del filteredList[:]
+    def itsTXT(self,f) :
+        print 'txt'
+        file_contents = f.read()
+        loadT.append(file_contents)
+        openIt.close()
+        a = ''.join(loadT)
+        textWord =  a.rstrip()
+        
+                        
+        for b in word_tokenize(textWord):
+            listWord.append(b)
+        for b in sent_tokenize(textWord):
+            sentence.append(b)
+
+        for a in listWord:
+            stemmedList.append(ps.stem(a))
+
+
+        for a in stemmedList : 
+            for b in notCount :
+                if a==b:
+                    foundSymbol = 1
+            if foundSymbol !=1:      
+                filteredList.append(a)
+
+                foundSymbol = 0
+            foundSymbol = 0
+
+        for a in filteredList :
+            lower.append(a.lower())
+            wordCollect.append(a.lower())
+        
+        a = ' '.join(listWord)
+        b = ' '
+
+        savedWord = []
+        wordFreq = []
+
+        c = Counter(lower)
+        del listWord[:]
+        del newListWord[:]                   
+        del stemmedList[:]
+        del lower[:]
+        del uniToStr[:]
+        del savedWord[:]
+        del wordFreq[:]
+        artCount = 0
+        comScCount = 0
+        for a in sentence :
+            if (s.sentiment(a))=="art" : ## check type for each sentence
+                artCount = artCount +1
+            else :
+                comScCount = comScCount +1
+
+        allType = artCount + comScCount  ## calculate all word numbers
+        artPercent = float((float(artCount)/float(allType)))*100
+        comScPercent = float((float(comScCount)/float(allType)))*100
+        
+        if artPercent > comScPercent : 
+            typeText = "ART"        ## if number of art sentence > com then it's ART
+            for word in sentence :
+                artWord.append(word)
+            for a in filteredList :
+                PArt.append(a.lower())
+        else :
+            typeText = "COMPUTER SCIENCE" ## if not its COM
+            for word in sentence :
+                comScWord.append(word)
+            for a in filteredList :
+                PComSc.append(a.lower())
+        typeList.append((link,typeText))
+    
+        del sentence[:]
+        del filteredList[:]
+    def itsHTML(self):
+        print 'html'
     def submitCheck(self):
         if checkLoad ==[] and checkLink ==[] :
             print "Empty"
@@ -500,9 +645,10 @@ class enterInput(tk.Frame):  ### program window
         
         self.submitLoad()
         self.submitLink()
-        
+    
     def submitLoad(self):
         foundSymbol = 0
+##        for a in allFile :
         for a in loadTr :
             self.wordToken(a,listWord)
             
