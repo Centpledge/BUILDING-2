@@ -605,20 +605,24 @@ class enterInput(tk.Frame):  ### program window
         del sentence[:]
         del filteredList[:]
     def itsTXT(self,f) :
+        foundSymbol = 0
         enterInput.txtCount += 1
-        print 'txt'
-        file_contents = f.read()
-        loadT.append(file_contents)
-        openIt.close()
-        a = ''.join(loadT)
-        textWord =  a.rstrip()
+        file_contents = f
+        a= open(f,'r')
+        
+        aa = a.read()
+        print aa
+        loadT.append(a.read)
+        
+        
+        
         
                         
-        for b in word_tokenize(textWord):
+        for b in word_tokenize(aa):
             listWord.append(b)
-        for b in sent_tokenize(textWord):
+        for b in sent_tokenize(aa):
             sentence.append(b)
-
+        
         for a in listWord:
             stemmedList.append(ps.stem(a))
 
@@ -675,7 +679,7 @@ class enterInput(tk.Frame):  ### program window
                 comScWord.append(word)
             for a in filteredList :
                 PComSc.append(a.lower())
-        typeList.append((link,typeText))
+        typeList.append((f,typeText))
     
         del sentence[:]
         del filteredList[:]
