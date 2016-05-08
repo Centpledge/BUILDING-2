@@ -147,6 +147,11 @@ class enterInput(tk.Frame):  ### program window
     checkSubmit  = False
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
+        
+        tex = tk.Text(self)
+        tex.pack(side=tk.LEFT)
+        bop = tk.Frame()
+##        bop.pack(side=tk.RIGHT)
         label = tk.Label(self, text="Enter Link", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
         label2 = tk.Label(self, text="you can enter both link and text file", font=LARGE_FONT)
@@ -159,10 +164,7 @@ class enterInput(tk.Frame):  ### program window
         delbutton = tk.Button(self, text="DELETE ALL",width = 30, command=self.delAllList)
         popbutton = tk.Button(self, text="DELETE Lastest link",width = 30, command=self.delLastList)
 
- 
-##        ww = Label(self, text="After you entered all links click SUBMIT")
-##    
-##        ww.pack(pady=5)
+
         ent = Entry(self,width = 60)
         ent.pack(pady=2,padx=10)
         all_entries.append( ent )
@@ -195,8 +197,7 @@ class enterInput(tk.Frame):  ### program window
         button4 = tk.Button(self, text="All word cloud",width = 30,
                             command=self.showWc)
         button4.pack()
-        button5 = tk.Button(self, text="Art word cloud",width = 30,
-                            command=self.showWcArt)
+        button5 = tk.Button(self, text="Art word cloud",width = 30,command=self.showWcArt)
         button5.pack()
         button6 = tk.Button(self, text="Computer Science word cloud",width = 30,
                             command=self.showWcComSc)
@@ -204,7 +205,7 @@ class enterInput(tk.Frame):  ### program window
         sp2 = Label(self, text="Histogram ")
         
         sp2.pack(pady = 10)
-        plotW = tk.Button(self, text="All word",width = 30, command=self.plotG)
+        plotW = tk.Button(self, text="All word",width = 30, command=self.opPrint("555",tex))
         plotW.pack()
 
         plotWArt = tk.Button(self, text="Art word",width = 30, command=self.plotGArt)
@@ -212,10 +213,25 @@ class enterInput(tk.Frame):  ### program window
         plotWComSc = tk.Button(self, text="Computer Science word",width = 30, command=self.plotGComSc)
         plotWComSc.pack()
         sp3 = Label(self, text="")
+        abc = tk.Button( width= 20,text='Exit', command=parent.destroy).pack()
         sp3.pack()
+        
 ##        button1.pack(pady = 40)
-
-
+        
+    def cbc(self,id, tex):
+        return lambda : callback(id, tex)
+    
+    def returnTex(self,a):
+        return lambda : a
+    def callback(self,id, tex):
+        s = 'At {} f is {}\n'.format(id, id**id/0.987)
+        tex.insert(tk.END, s)
+        tex.see(tk.END)  
+    def opPrint(self,text,tex):
+        return lambda : self.pr(text,tex)
+    def pr(self,t,tex):
+        tex.insert(tk.END, t)
+        tex.see(tk.END) 
 ##        listbox2 = Listbox(self,width =50,height = 5)
 ##        listbox2.pack()
         
@@ -324,7 +340,8 @@ class enterInput(tk.Frame):  ### program window
             print "Empty"
     def showWcArt(self):  ## Art wordcloud
         if artWord==[]:
-            pass
+            self.opPrint("Empty")
+            print "kuy"
         else :
             try :
                 a = ' '.join(artWord)
@@ -339,6 +356,7 @@ class enterInput(tk.Frame):  ### program window
                 num = 0
             except :
                 print "Empty"
+                
     def showWcComSc(self):  ## Computer science wordcloud
         if comScWord ==[]:
             pass
