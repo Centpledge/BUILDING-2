@@ -34,8 +34,8 @@ class VoteClassifier(ClassifierI):
         conf = choice_votes / len(votes)
         return conf
     
-sArt = open("short_reviews/art.txt","r").read() ## open art text
-sCom = open("short_reviews/com.txt","r").read() ## open com text
+sArt = open("short_reviews/art_4.txt","r").read() ## open art text
+sCom = open("short_reviews/com_4.txt","r").read() ## open com text
 
 # move this up here
 all_words = []
@@ -68,7 +68,7 @@ for p in sCom.split('\n'):
 
 
 
-save_documents = open("pickled_algos/documents.pickle","wb")
+save_documents = open("pickled_algos/documentsFinal.pickle","wb")
 pickle.dump(documents, save_documents) ## save to pickle
 save_documents.close()
 
@@ -76,10 +76,10 @@ save_documents.close()
 all_words = nltk.FreqDist(all_words)
 
 
-word_features = list(all_words.keys())[:5000]
+word_features = list(all_words.keys())[:2000]
 
 
-save_word_features = open("pickled_algos/word_features5k.pickle","wb")
+save_word_features = open("pickled_algos/word_features5kFinal.pickle","wb")
 pickle.dump(word_features, save_word_features) ## save to pickle
 save_word_features.close()
 
@@ -105,7 +105,7 @@ classifier = nltk.NaiveBayesClassifier.train(training_set)
 print("Original Naive Bayes Algo accuracy percent:", (nltk.classify.accuracy(classifier, testing_set))*100)
 classifier.show_most_informative_features(15)
 
-save_classifier = open("pickled_algos/originalnaivebayes5k.pickle","wb")
+save_classifier = open("pickled_algos/originalnaivebayes5kFinal.pickle","wb")
 pickle.dump(classifier, save_classifier)
 save_classifier.close()
 

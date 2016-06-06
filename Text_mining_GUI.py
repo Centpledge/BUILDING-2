@@ -13,7 +13,7 @@ from Tkinter import *
 import ttk
 from random import Random
 import csv
-import sentiment_mod as s
+import old_sentiment_mod as s
 from ttk import *
 from PIL import ImageTk ,Image
 import tkMessageBox
@@ -44,6 +44,7 @@ ccc = []
 checkLoad =[]
 checkLink = []
 all_entries = []
+ans = []
 getLink = []
 listWord = []
 newListWord =[]
@@ -65,6 +66,9 @@ PComSc = []
 loadT = []
 loadTr= []
 textB ='0'
+resultT = []
+tempWord = []
+
 savedWord = []
 wordCollect = ["Empty"]
 ent = ""
@@ -145,21 +149,25 @@ class enterInput(tk.Frame):  ### program window
     artC = 0
     comScC = 0
     checkSubmit  = False
+    
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         
+        global tex
         tex = tk.Text(self)
         tex.pack(side=tk.LEFT)
         bop = tk.Frame()
-##        bop.pack(side=tk.RIGHT)
+        bop.pack(side=tk.RIGHT)
         label = tk.Label(self, text="Enter Link", font=LARGE_FONT)
-        label.pack(pady=10,padx=10)
+        label.pack(pady=5,padx=10)
         label2 = tk.Label(self, text="you can enter both link and text file", font=LARGE_FONT)
 ##        label2.pack(pady=10,padx=10)
         artCount = 0
         comScCount = 0
-       
-
+        tex.insert(tk.END,'Live output window \n')
+        tex.see(tk.END)
+        tex.update_idletasks()
+    
         subbutton = tk.Button(self, text="SUBMIT",font = LARGE_FONT,width =45,height = 2 ,command=self.func)
         delbutton = tk.Button(self, text="DELETE ALL",width = 30, command=self.delAllList)
         popbutton = tk.Button(self, text="DELETE Lastest link",width = 30, command=self.delLastList)
@@ -183,12 +191,7 @@ class enterInput(tk.Frame):  ### program window
         button9.pack()
 ##        popbutton.pack()
         delbutton.pack()
-        sp1 = Label(self, text="Word Cloud")
-
-   
-
-
-    
+        sp1 = Label(self, text="Word Cloud")   
         sp1.pack(pady = 10)
 ##        button1 = tk.Button(self, text="Back to Home",width = 45,height = 2,
 ##                         command=lambda: controller.show_frame(StartPage))
@@ -205,7 +208,7 @@ class enterInput(tk.Frame):  ### program window
         sp2 = Label(self, text="Histogram ")
         
         sp2.pack(pady = 10)
-        plotW = tk.Button(self, text="All word",width = 30, command=self.opPrint("555",tex))
+        plotW = tk.Button(self, text="All word",width = 30, command=self.plotG)
         plotW.pack()
 
         plotWArt = tk.Button(self, text="Art word",width = 30, command=self.plotGArt)
@@ -213,25 +216,54 @@ class enterInput(tk.Frame):  ### program window
         plotWComSc = tk.Button(self, text="Computer Science word",width = 30, command=self.plotGComSc)
         plotWComSc.pack()
         sp3 = Label(self, text="")
+
         abc = tk.Button( width= 20,text='Exit', command=parent.destroy).pack()
+        ent2 = Entry(self,width = '5')
+        ent2.pack(pady=5,padx=10)
+        ans.append(ent2)
+        vLabel = tk.Button(self,text = 'View',command =self.showEach)
+        vLabel.pack(pady=5,padx=10)
+        abc2 = tk.Label( width= 20,text='').pack()
         sp3.pack()
+ 
         
 ##        button1.pack(pady = 40)
+    def ppp(self):
+        a = 1+3
+        tex.insert(tk.END,a)
+        tex.see(tk.END)
+        tex.update_idletasks()
+    def pp(self):
         
+        tex.insert(tk.END,"eiei")
+        tex.see(tk.END)
+        tex.update_idletasks()
     def cbc(self,id, tex):
         return lambda : callback(id, tex)
+
+    def getTex(self,tex):
+        return lambda :self.printChoose("FUCK",tex)
     
+    def printChoose(self,t,tex):
+        tex.insert(tk.END, t)
+        tex.see(tk.END)
+        
     def returnTex(self,a):
         return lambda : a
     def callback(self,id, tex):
         s = 'At {} f is {}\n'.format(id, id**id/0.987)
         tex.insert(tk.END, s)
-        tex.see(tk.END)  
+        tex.see(tk.END)
+        tex.update_idletasks()
+    def addPrint(self,tex):
+        self.chooseFile(tex)
+        
     def opPrint(self,text,tex):
         return lambda : self.pr(text,tex)
     def pr(self,t,tex):
         tex.insert(tk.END, t)
-        tex.see(tk.END) 
+        tex.see(tk.END)
+        tex.update_idletasks()
 ##        listbox2 = Listbox(self,width =50,height = 5)
 ##        listbox2.pack()
         
@@ -298,6 +330,9 @@ class enterInput(tk.Frame):  ### program window
             plt.show()
         except :
             print "Empty"
+            tex.insert(tk.END,'Empty Data')
+            tex.see(tk.END)
+            tex.update_idletasks()
     def plotGComSc(self): ## plot histogram comSc
         try :
             c = Counter(PComSc)
@@ -324,6 +359,10 @@ class enterInput(tk.Frame):  ### program window
             plt.show()
         except:
             print "Empty"
+            tex.insert(tk.END,'Empty Data')
+            tex.see(tk.END)
+            tex.update_idletasks()
+            
     def showWc(self):   ## All word wordcloud
         try :
             a = ' '.join(wordCollect)       
@@ -338,10 +377,15 @@ class enterInput(tk.Frame):  ### program window
             num = 0
         except :
             print "Empty"
+            tex.insert(tk.END,'Empty Data')
+            tex.see(tk.END)
+            tex.update_idletasks()
     def showWcArt(self):  ## Art wordcloud
         if artWord==[]:
-            self.opPrint("Empty")
-            print "kuy"
+            
+            tex.insert(tk.END,'Empty Data  \n')
+            tex.see(tk.END)
+            tex.update_idletasks()
         else :
             try :
                 a = ' '.join(artWord)
@@ -356,6 +400,9 @@ class enterInput(tk.Frame):  ### program window
                 num = 0
             except :
                 print "Empty"
+                tex.insert(tk.END,'Empty Data')
+                tex.see(tk.END)
+                tex.update_idletasks()
                 
     def showWcComSc(self):  ## Computer science wordcloud
         if comScWord ==[]:
@@ -373,7 +420,10 @@ class enterInput(tk.Frame):  ### program window
                 yPoint = 0
                 num = 0
             except:
-                "Empty"
+                
+                tex.insert(tk.END,'Empty Data')
+                tex.see(tk.END)
+                tex.update_idletasks()
     def func(self):
         global ent
 
@@ -393,9 +443,15 @@ class enterInput(tk.Frame):  ### program window
                 
                 print "ADD  " + ent.get()  ## print all added links
 ##                print splitLink
+                tex.insert(tk.END,'Adding Link')
+                tex.see(tk.END)
+                tex.update_idletasks()
                 for item in splitLink :
                     getLink.append(item)   ## append splited links in to getLink
                     ent.delete(0, 'end')   ##
+                    tex.insert(tk.END,'{} ADDED '.format(item))
+                    tex.see(tk.END)
+                    tex.update_idletasks()
 ##                print getLink
         self.submitCheck()
     def pullText(self,link):
@@ -405,9 +461,22 @@ class enterInput(tk.Frame):  ### program window
         g_data =soup.find_all("p")
         return g_data
     
-    
+    def showEach(self):
+        global ent2
+       
+        for number, ent2 in enumerate(ans):
+            if len(ent2.get()) == 0 :
+                print "empty"
+            else :
 
+                try:
+                    a =  int(ent2.get())
+                    print resultT[a]
+                except :
+                    pass
+                
 
+            
     def wordToken(self,sentence,listA):
         
             for a in word_tokenize(sentence):
@@ -421,14 +490,16 @@ class enterInput(tk.Frame):  ### program window
     def appendLower(self,sentence,listA):
         for item in sentence:
             listA.append(item.lower())
-            
+    
     def enterLink(self):
         global ent
 
         for number, ent in enumerate(all_entries):
             if len(ent.get()) == 0 and loadT ==[] and checkLoad ==[]:
                     print "this entry is  empty"    ## check if entry is empty or not
-                
+                    tex.insert(tk.END,'This entry is empty \n')
+                    tex.see(tk.END)
+                    tex.update_idletasks()
                  
             else:
                 allLinks = open("data_input/links.pickle","wb") ## if not empty then dump all links
@@ -437,13 +508,22 @@ class enterInput(tk.Frame):  ### program window
                 checkLink.append('b')
 
                 splitLink = ent.get().split() ## split each links
-                
+                tex.insert(tk.END,'Adding Link \n')
+                tex.see(tk.END)
+                tex.update_idletasks()
                 print "ADD  " + ent.get()  ## print all added links
 ##                print splitLink
                 for item in splitLink :
-                    getLink.append(item)   ## append splited links in to getLink
+                    getLink.append(item)
+                    tex.insert(tk.END,'{}  Added \n'.format(item))
+                    tex.see(tk.END)
+                    tex.update_idletasks()
+                    ## append splited links in to getLink
                     ent.delete(0, 'end')   ##
 ##                print getLink
+                tex.insert(tk.END,'Adding Completed \n'.format(item))
+                tex.see(tk.END)
+                tex.update_idletasks()
         checkLink.append('a')
     def printLink(self):     ## PRINT LINK
         if len(getLink) == 0: ## if link empty print EMPTY
@@ -456,6 +536,11 @@ class enterInput(tk.Frame):  ### program window
 
     def delAllList(self):   ## DELETE ALL LIST
         print "All saved links DELETED"
+        tex.insert(tk.END,'============================================================================\n')
+        tex.insert(tk.END,'                           EVERYTHING DELETED                               \n')
+        tex.insert(tk.END,'============================================================================\n')
+        tex.see(tk.END)
+        tex.update_idletasks()
         del getLink[:]
         del tupleList[:]
         del listWord[:]
@@ -484,7 +569,7 @@ class enterInput(tk.Frame):  ### program window
         enterInput.artC = 0
         enterInput.comScC = 0
         enterInput.checkSubmit  = False
-        self.checkCase(getLink,[])
+        
         
         
     def delLastList(self):     ### delete last index
@@ -514,8 +599,15 @@ class enterInput(tk.Frame):  ### program window
         
         filez = tkFileDialog.askopenfilenames()
         splitFilez = self.tk.splitlist(filez)
+        tex.insert(tk.END,'============================================================================\n')
+        tex.insert(tk.END,'Adding File\n')
+        tex.see(tk.END)
+        tex.update_idletasks()
         for item in splitFilez :
             print "ADD %s" %item
+            tex.insert(tk.END,'{}  Added\n'.format(item))
+            tex.see(tk.END)
+            tex.update_idletasks()
             openIt = open(item,'r')
             allFile.append(item) #each file
 ##            self.checkEnd(item)
@@ -528,6 +620,10 @@ class enterInput(tk.Frame):  ### program window
 ##        for word in word_tokenize(b):
 ##            try:
 ##        loadTr.append(word)
+        tex.insert(tk.END,'Adding Completed \n')
+        tex.insert(tk.END,'============================================================================\n')
+        tex.see(tk.END)
+        tex.update_idletasks()
         checkLoad.append('a')
 ##            except:
 ##                pass
@@ -565,7 +661,7 @@ class enterInput(tk.Frame):  ### program window
         for a in listWord:
             stemmedList.append(ps.stem(a))
 
-
+            
         for a in stemmedList : 
             for b in notCount :
                 if a==b:
@@ -579,7 +675,9 @@ class enterInput(tk.Frame):  ### program window
         for a in filteredList :
             lower.append(a.lower())
             wordCollect.append(a.lower())
-        
+            tempWord.append(a.lower())
+        wcc = Counter(tempWord)
+        mc = wcc.most_common(10)
         a = ' '.join(listWord)
         b = ' '
 
@@ -619,9 +717,10 @@ class enterInput(tk.Frame):  ### program window
             for a in filteredList :
                 PComSc.append(a.lower())
         typeList.append((path,typeText))
-    
+        resultT.append([path,mc])
         del sentence[:]
         del filteredList[:]
+        del tempWord[:]
     def itsTXT(self,f) :
         foundSymbol = 0
         enterInput.txtCount += 1
@@ -658,6 +757,9 @@ class enterInput(tk.Frame):  ### program window
         for a in filteredList :
             lower.append(a.lower())
             wordCollect.append(a.lower())
+            tempWord.append(a.lower())
+        wcc = Counter(tempWord)
+        mc = wcc.most_common(10)
         
         a = ' '.join(listWord)
         b = ' '
@@ -698,10 +800,11 @@ class enterInput(tk.Frame):  ### program window
             for a in filteredList :
                 PComSc.append(a.lower())
         typeList.append((f,typeText))
+        resultT.append([f,mc])
     
         del sentence[:]
         del filteredList[:]
-        
+        del tempWord[:]
     def itsHTML(self,f):
         
         enterInput.htmlCount += 1
@@ -740,10 +843,12 @@ class enterInput(tk.Frame):  ### program window
         for a in filteredList :
             lower.append(a.lower())
             wordCollect.append(a.lower())
+            tempWord.append(a.lower())
         
         a = ' '.join(listWord)
         b = ' '
-
+        wcc = Counter(tempWord)
+        mc = wcc.most_common(10)
         savedWord = []
         wordFreq = []
 
@@ -780,9 +885,11 @@ class enterInput(tk.Frame):  ### program window
             for a in filteredList :
                 PComSc.append(a.lower())
         typeList.append((f,typeText))
+        resultT.append([f,mc])
     
         del sentence[:]
         del filteredList[:]
+        del tempWord[:]
         
     def submitCheck(self):
         if checkLoad ==[] and checkLink ==[] :
@@ -797,6 +904,35 @@ class enterInput(tk.Frame):  ### program window
         if enterInput.checkSubmit ==False :
             a= enterInput.linkCount + enterInput.pdfCount + enterInput.txtCount + enterInput.htmlCount
             self.typeResult()
+            tex.insert(tk.END,'============================================================================\n')
+            tex.insert(tk.END,' \n')
+            tex.insert(tk.END,' \n')
+            tex.insert(tk.END,' \n')
+            tex.insert(tk.END,'                        =================================\n')
+            tex.insert(tk.END,'                                All document entered \n')
+            tex.insert(tk.END,'                        =================================\n')
+            tex.insert(tk.END,'                                  {}   Link entered\n'.format(enterInput.linkCount))
+            tex.insert(tk.END,'                                  {}   PDF  entered\n'.format(enterInput.pdfCount))
+            tex.insert(tk.END,'                                  {}   TXT  entered\n'.format(enterInput.txtCount))
+            tex.insert(tk.END,'                                  {}   HTML entered\n'.format(enterInput.htmlCount))
+            tex.insert(tk.END,'                        =================================\n')
+            tex.insert(tk.END,'                                      RESULT\n')
+            tex.insert(tk.END,'                        =================================\n')
+            tex.insert(tk.END,'                                                         \n')
+            tex.insert(tk.END,'                                               \n')
+            tex.insert(tk.END,'                                  {}  ART document(s)    \n'.format(enterInput.artC))
+            tex.insert(tk.END,'                                  {}  COMPUTER SCIENCE document(s)  \n'.format(enterInput.comScC))
+            tex.insert(tk.END,' \n')
+            tex.insert(tk.END,' \n')
+            tex.insert(tk.END,'============================================================================\n')
+            xx = -1
+            for i,t in resultT :
+                xx = xx+1
+                tex.insert(tk.END,'[{}] {} \n'.format(xx,i))
+            
+            
+            tex.see(tk.END)
+            tex.update_idletasks()
             print "================================================================================"
             print " "
             print " "
@@ -887,10 +1023,12 @@ class enterInput(tk.Frame):  ### program window
                         for a in filteredList :
                             lower.append(a.lower())
                             wordCollect.append(a.lower())
+                            tempWord.append(a.lower())
                         
                         a = ' '.join(listWord)
                         b = ' '
-                
+                        asd = Counter(tempWord)
+                        mc = asd.most_common(10)
                         savedWord = []
                         wordFreq = []
 
@@ -927,9 +1065,11 @@ class enterInput(tk.Frame):  ### program window
                             for a in filteredList :
                                 PComSc.append(a.lower())
                         typeList.append((link,typeText))
+                        resultT.append([link,mc])
                     
                         del sentence[:]
                         del filteredList[:]
+                        del tempWord[:]
                 
 ##            save_typeList = open("data_input/typelist.pickle","wb")
 ##            pickle.dump(typeList, save_typeList) ## save link and type to pickle for future usage

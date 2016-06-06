@@ -36,14 +36,14 @@ class VoteClassifier(ClassifierI):
         return conf
 
 
-documents_f = open("pickled_algos/documents.pickle", "rb")
+documents_f = open("pickled_algos/documentsFinal.pickle", "rb")
 documents = pickle.load(documents_f)
 documents_f.close()
 
 
 
 
-word_features5k_f = open("pickled_algos/word_features5k.pickle", "rb")
+word_features5k_f = open("pickled_algos/word_features5kFinal.pickle", "rb")
 word_features = pickle.load(word_features5k_f)
 word_features5k_f.close()
 
@@ -58,7 +58,7 @@ def find_features(document):
 
 
 
-open_file = open("pickled_algos/originalnaivebayes5k.pickle", "rb")
+open_file = open("pickled_algos/originalnaivebayes5kFinal.pickle", "rb")
 classifier = pickle.load(open_file)
 open_file.close()
 
